@@ -79,7 +79,7 @@ $(document).ready(function() {
 
 $('.parallaxie').parallaxie({
 	speed: 0.5,
-	offset: -30,
+	offset: -15,
     size: '850px',
     pos_x: '60%',
 });
