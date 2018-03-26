@@ -75,10 +75,15 @@ $(document).ready(function() {
     });
 });
 
+// Parallax Effects
 
-var shine = new Shine(document.getElementById('shine-1'));
-window.addEventListener('mousemove', function(event) {
-  shine.light.position.x = event.clientX;
-  shine.light.position.y = event.clientY;
-  shine.draw();
-}, false);
+$('.parallaxie').parallaxie({
+	speed: 0.5,
+	offset: -30,
+    size: '850px',
+    pos_x: '60%',
+});
+
+// Animate on Scroll
+
+AOS.init();

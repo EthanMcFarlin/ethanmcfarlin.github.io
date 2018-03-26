@@ -29,131 +29,6 @@ blockquote * {
 .text-center {
 	text-align: center;
 }
-
-/*------------------------------
- Hero
------------------------------- */
-
-#intro{
-    height: 100vh;
-    background: url(/static/img/background-image.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-}
-#portrait {
-    background: url(/static/img/portrait.png);
-    height:250px;
-    width:250px;
-    margin: 0 auto;
-    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.8);
-        -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.8);
-			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.86);
-}
-
-#intro h1 {
-  margin: 0;
-  padding: 0 10px;
-  position: relative;
-  top: 45%;
-  transform: translateY(-50%);
-  text-align: center;
-  font-size: 60px;
-  margin-left:2vw;
-    transform:translateY(-100px);
-}
-
-.circle {
-    margin-top: -150px
-}
-
-.circle a {
-    display: block;
-    color: #53676D;
-    
-}
-
-.circle a i:hover {
-    transition:0.15s all ease;
-    color: #ccc;
-    cursor: pointer
-}
-
-.center {
-    display: block;
-    width: 175px;
-    margin: 0 auto
-}
-
-.circle a.r {
-    text-shadow: 0 0 10px rgba(34,34,34,0.1);
-    text-align: center;
-    height: 0;
-    width: 56px;
-    margin: 0 auto
-}
-
-.circle a.r i {
-    vertical-align: middle;
-    line-height: 56px;
-    font-size: 40px;
-}
-
-.center>img {
-    display: block;
-    width: 100%;
-    padding-top: 175px
-}
-
-.title {
-	text-align: center;
-	color: #FFF;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	letter-spacing: 1px;
-    margin-top:-105px;    
-    opacity: 0.7;
-}
-
-.title:hover {
-    transition:0.5s all ease;
-    opacity: 0.5;
-}
-.animated-text {
-	background-image: url(/static/img/screencast.gif);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	text-transform: uppercase;
-	font-size: 120px;
-	line-height: .75;
-	margin: 10px 0;
-    z-index:-5;
-}
-/* styling my button */
-
-.white-mode {
-	text-decoration: none;
-	padding: 7px 10px;
-	background-color: #fff;
-	border-radius: 3px;
-	color: #FFF;
-	transition: .35s ease-in-out;
-	position: absolute;
-	left: 15px;
-	bottom: 15px;
-}
-
-.white-mode:hover {
-	background-color: #FFF;
-	color: #fff;
-}
-
-
 /*------------------------------
   Navigation
 ------------------------------ */
@@ -308,36 +183,131 @@ h3 {
     top: initial;
 	}
 }
-
 /*------------------------------
-  About
+ Hero
 ------------------------------ */
 
-#about {
-    height:200px;
+#intro{
+    height: 100vh;
+    background: url(/static/img/background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
 }
-.title-bar {
-    height:100px;
-    background: url(/static/img/trianglify.png);
-          -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+#portrait {
+    background: url(/static/img/portrait.png);
+    height:250px;
+    width:250px;
+    margin: 0 auto;
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.8);
+        -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.8);
+			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.86);
 }
 
-.title-text {
-    padding-top:20px;
-    font-family: Roboto;
-    color: #fff;
-    font-weight:100;
-    margin-left:5vw;
+#intro h1 {
+  margin: 0;
+  padding: 0 10px;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 60px;
+  margin-left:2vw;
+    transform:translateY(-100px);
 }
 
+.circle {
+    margin-top: -150px
+}
+
+.circle a {
+    display: block;
+    color: #53676D;
+    
+}
+
+.circle a i:hover {
+    transition:0.15s all ease;
+    color: #ccc;
+    cursor: pointer
+}
+
+.center {
+    display: block;
+    width: 175px;
+    margin: 0 auto
+}
+
+.circle a.r {
+    text-shadow: 0 0 10px rgba(34,34,34,0.1);
+    text-align: center;
+    height: 0;
+    width: 56px;
+    margin: 0 auto
+}
+
+.circle a.r i {
+    vertical-align: middle;
+    line-height: 56px;
+    font-size: 40px;
+}
+
+.center>img {
+    display: block;
+    width: 100%;
+    padding-top: 175px
+}
+
+.title {
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 1px;
+    margin-top:-105px;    
+    opacity: 0.7;
+}
+
+
+.animated-text {
+	background-image: url(/static/img/screencast.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+    z-index:-5;
+}
+/* styling my button */
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #fff;
+}
 
 .animating-bg {
   background-image: url("/static/img/kbb19w.png");
   background-repeat: repeat;
-  height: 200%;
-  width: 200%;
+  height: 100%;
+  width: 170%;
   transform: rotate(45deg);
   top: -50%;
   left: -50%;
@@ -356,7 +326,7 @@ h3 {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: normal;
   -webkit-animation-play-state: running;
-   opacity:0.04;
+   opacity:0.08;
 }
 
 @keyframes animate-bg
@@ -372,4 +342,43 @@ h3 {
 	50%   {background-position: 0 1000%;transform: rotate(45deg) scale(1);}
   75%   {transform: rotate(45deg) scale(2); opacity: 1}
   100%   {background-position: 0 1600%;transform: rotate(45deg) scale(2.75); opacity: 0;}
+}
+
+/*------------------------------
+ Any Section
+------------------------------ */
+
+.title-bar {
+    height:100px;
+          -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+
+.section-thumbnail {
+    height:150px;
+    width: 150px;
+    position: absolute;
+    margin-left:5vw;
+    top:-25px;
+}
+
+.title-text {
+    padding-top:20px;
+    font-family: Roboto;
+    color: #fff;
+    font-weight:100;
+    margin-left:15vw;
+}
+
+/*------------------------------
+  About
+------------------------------ */
+
+#about {
+    height:200px;
+}
+
+#vector-background {
+    height:500px;
 }
