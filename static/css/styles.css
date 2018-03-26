@@ -123,7 +123,7 @@ blockquote * {
     opacity: 0.5;
 }
 .animated-text {
-	background-image: url(https://raw.githubusercontent.com/xndcn/symbols-tree-view/master/screencast.gif?raw=true);
+	background-image: url(/static/img/screencast.gif);
 	background-size: cover;
 	color: transparent;
 	-moz-background-clip: text;
@@ -334,7 +334,7 @@ h3 {
 
 
 .animating-bg {
-  background-image: url("http://i61.tinypic.com/kbb19w.png");
+  background-image: url("/static/img/kbb19w.png");
   background-repeat: repeat;
   height: 200%;
   width: 200%;
