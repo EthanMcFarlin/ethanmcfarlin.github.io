@@ -1,0 +1,317 @@
+/*------------------------------
+ Body & Universal Elements
+------------------------------ */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
+
+body {
+	color: #333;
+	font-size: 16px;
+    background: url(../../static/img/trame-bg.png) repeat;
+    height: 14000px;
+}
+a {
+	color: #009688;
+}
+blockquote {
+	border-left: 5px solid #795548;
+	color: #795548;
+	font-size: 125%;
+	font-weight: 400;
+	margin: 20px 0;
+	padding-left: 1.5rem;
+}
+
+blockquote * {
+  font-size: inherit;
+  line-height: inherit;
+}
+.text-center {
+	text-align: center;
+}
+
+/*------------------------------
+ Hero
+------------------------------ */
+
+#intro{
+    height: 100vh;
+    background: url(/portfolio/static/img/background-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+#portrait {
+    background: url(/portfolio/static/img/portrait.png);
+    height:250px;
+    width:250px;
+    margin: 0 auto;
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.8);
+        -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.8);
+			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.86);
+}
+
+#intro h1 {
+  margin: 0;
+  padding: 0 10px;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: Abril Fatface, serif;
+  font-size: 60px;
+  margin-left:2vw;
+    transform:translateY(-150px);
+}
+
+.circle {
+    margin-top: -150px
+}
+
+.circle a {
+    display: block;
+    color: rgba(54,54,54,0.6);
+    
+}
+
+.circle a i:hover {
+    transition:0.15s all ease;
+    color: #ccc;
+    cursor: pointer
+}
+
+.center {
+    display: block;
+    width: 175px;
+    margin: 0 auto
+}
+
+.circle a.r {
+    text-shadow: 0 0 10px rgba(34,34,34,0.1);
+    text-align: center;
+    height: 0;
+    width: 56px;
+    margin: 0 auto
+}
+
+.circle a.r i {
+    vertical-align: middle;
+    line-height: 56px;
+    font-size: 40px
+}
+
+.center>img {
+    display: block;
+    width: 100%;
+    padding-top: 175px
+}
+
+.fancy-text {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  position: relative;
+  width: 600px;
+  font-size: 30px;
+  text-align: center;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+
+.line-1, .line-2 {
+  display: block; 
+  opacity: 0.5;
+
+}
+
+.line-1 {
+  position: relative;
+  top:170px;
+    z-index:-1;
+}
+
+.line-2 {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin: 0 0;
+    
+}
+
+/*------------------------------
+  Navigation
+------------------------------ */
+
+nav {
+	background: white;
+	box-shadow: none;
+	height: 0;
+}
+nav i {
+	padding: 0 15px;
+	position: relative;
+	top: 5px;
+}
+main {
+	padding-left: 190px;
+}
+ul.side-nav {
+	width: 190px;
+}
+ul.side-nav li {
+	padding: 0;
+}
+ul.side-nav.fixed a {
+	box-sizing: content-box;
+	color: #444;
+	display: block;
+	line-height: 100%;
+	padding: 10px 0 12px;
+}
+ul.table-of-contents li.logo a.active,
+ul.table-of-contents li.logo a:hover {
+	border: none;
+	font-weight: 200;
+}
+ul.side-nav.fixed li.logo {
+	background-color: #fafafa;
+	border-bottom: 1px solid #ddd;
+	box-sizing: content-box;
+	min-height: 90px;
+	padding: 30px 30px 40px;
+}
+ul.side-nav.fixed li.logo a {
+	font-weight: 200;
+	line-height: 100%;
+}
+ul.table-of-contents li:not(.logo) a.active,
+ul.table-of-contents li:not(.logo) a:hover {
+	background-color: #fafafa;
+	border-left: 3px solid ;
+}
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+ul#slide-out li:not(.logo) a span {
+	color: #333 !important;
+}
+li.logo span {
+	display: block;
+	font-size: 14px;
+}
+.brand-logo h2 {
+	font-size: inherit;
+  line-height: inherit;
+  margin: inherit;
+  font-weight: inherit;
+}
+.container {
+	width: 95%
+}
+h3 {
+	font-weight: 200;
+	margin-bottom: 60px;
+	margin-top: 0;
+	padding: 30px 40px;
+	text-transform: uppercase;
+}
+.section {
+	padding-bottom: 30px;
+	padding-top: 0;
+	position: relative;
+}
+.full-height {
+	height: 100vh;
+}
+
+@media (max-width: 992px) {
+	main {
+		padding-left: 0px;
+		padding-top: 64px;
+	}
+	ul.side-nav a {
+	  line-height: 100%;
+	  padding: 0;
+	  width: 100%;
+	}
+	nav {
+		background: #fff;
+		height: 64px;
+		position: absolute;
+	}
+	nav a.button-collapse,
+	nav a.button-collapse i {
+		color: #009688;
+		height: 56px;
+		line-height: 56px;
+	}
+	h3 {
+		padding: 20px 30px;
+  	margin-bottom: 40px;
+	}
+	.container {
+		margin:  0 auto;
+	}
+
+	nav.hide-on-large.only.trigger {
+		display: block;
+	  position: fixed;
+	  top: 0;
+	  z-index: 2;
+	}
+	.name-title {
+	  display: block;
+	  height: 100%;
+	  padding-top: 15px;
+	  text-align: center;
+	  width: 100%;
+    position: absolute;
+	}
+	.name-title > span,
+	.name-title > a {
+    position: relative;
+    line-height: 20px;
+	}
+	.name-title a {
+    font-size: 22px;
+    display: block;
+	}
+	.name-title span {
+    display: block;
+    font-size: 14px;
+	}
+	h3,
+	.container {
+    position: relative;
+    top: 64px;
+	}
+	section#intro {
+	    margin-bottom: -64px;
+	}
+	.card .role {
+    position: relative;
+    right: initial;
+    top: initial;
+	}
+}
+
+/*------------------------------
+  About
+------------------------------ */
+
+#about {
+    height:200px;
+}
+.title-bar {
+    height:100px;
+    background: #009588;
+          -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+
+.title-text {
+    padding-top:20px;
+    font-family: Roboto;
+    color: #fff;
+    font-weight:100;
+    margin-left:5vw;
+}
