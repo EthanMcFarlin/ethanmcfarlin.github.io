@@ -2,6 +2,7 @@
  Body & Universal Elements
 ------------------------------ */
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
 	color: #333;
@@ -58,10 +59,9 @@ blockquote * {
   top: 45%;
   transform: translateY(-50%);
   text-align: center;
-  font-family: Abril Fatface, serif;
   font-size: 60px;
   margin-left:2vw;
-    transform:translateY(-150px);
+    transform:translateY(-100px);
 }
 
 .circle {
@@ -70,7 +70,7 @@ blockquote * {
 
 .circle a {
     display: block;
-    color: rgba(54,54,54,0.6);
+    color: #53676D;
     
 }
 
@@ -97,7 +97,7 @@ blockquote * {
 .circle a.r i {
     vertical-align: middle;
     line-height: 56px;
-    font-size: 40px
+    font-size: 40px;
 }
 
 .center>img {
@@ -106,37 +106,53 @@ blockquote * {
     padding-top: 175px
 }
 
-.fancy-text {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  position: relative;
-  width: 600px;
-  font-size: 30px;
-  text-align: center;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+.title {
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 1px;
+    margin-top:-105px;    
+    opacity: 0.7;
 }
 
-.line-1, .line-2 {
-  display: block; 
-  opacity: 0.5;
+.title:hover {
+    transition:0.5s all ease;
+    opacity: 0.5;
+}
+.animated-text {
+	background-image: url(https://raw.githubusercontent.com/xndcn/symbols-tree-view/master/screencast.gif?raw=true);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+    z-index:-5;
+}
+/* styling my button */
 
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
 }
 
-.line-1 {
-  position: relative;
-  top:170px;
-    z-index:-1;
+.white-mode:hover {
+	background-color: #FFF;
+	color: #fff;
 }
 
-.line-2 {
-  font-family: "Changa One", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 10px;
-  margin: 0 0;
-    
-}
 
 /*------------------------------
   Navigation
@@ -302,7 +318,7 @@ h3 {
 }
 .title-bar {
     height:100px;
-    background: #009588;
+    background: url(/static/img/trianglify.png);
           -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
               -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
                          box-shadow: 0px 0px 10px rgba(0,0,0,.8);
@@ -314,4 +330,46 @@ h3 {
     color: #fff;
     font-weight:100;
     margin-left:5vw;
+}
+
+
+.animating-bg {
+  background-image: url("http://i61.tinypic.com/kbb19w.png");
+  background-repeat: repeat;
+  height: 200%;
+  width: 200%;
+  transform: rotate(45deg);
+  top: -50%;
+  left: -50%;
+  position: fixed;
+  animation-name: animate-bg;
+  -webkit-animation-name: animate-bg;
+  animation-duration: 55s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  -webkit-animation-duration: 155s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-play-state: running;
+   opacity:0.04;
+}
+
+@keyframes animate-bg
+{
+	0%   {background-position: 0 0;transform: rotate(45deg) scale(1);}
+	50%   {background-position: 0 1000%;transform: rotate(45deg) scale(1);}
+  75%   {transform: rotate(45deg) scale(2);}
+  100%   {background-position: 0 1600%;transform: rotate(45deg) scale(2.75);}
+}
+@-webkit-keyframes animate-bg
+{
+	0%   {background-position: 0 0;transform: rotate(45deg) scale(1);}
+	50%   {background-position: 0 1000%;transform: rotate(45deg) scale(1);}
+  75%   {transform: rotate(45deg) scale(2); opacity: 1}
+  100%   {background-position: 0 1600%;transform: rotate(45deg) scale(2.75); opacity: 0;}
 }
