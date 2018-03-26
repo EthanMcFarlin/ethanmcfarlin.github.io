@@ -6,7 +6,7 @@
 body {
 	color: #333;
 	font-size: 16px;
-    background: url(../../static/img/trame-bg.png) repeat;
+    background: url(/static/img/trame-bg.png) repeat;
     height: 14000px;
 }
 a {
@@ -35,14 +35,14 @@ blockquote * {
 
 #intro{
     height: 100vh;
-    background: url(/portfolio/static/img/background-image.png);
+    background: url(/static/img/background-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
 }
 #portrait {
-    background: url(/portfolio/static/img/portrait.png);
+    background: url(/static/img/portrait.png);
     height:250px;
     width:250px;
     margin: 0 auto;
