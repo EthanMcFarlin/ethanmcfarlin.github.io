@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Hover - CSS-->    
     <link rel="stylesheet" href="https://cdn.bootcss.com/hover.css/2.1.1/css/hover-min.css">   
-    <!-- Animate on Scroll - CSS-->        
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate on Scroll - CSS-->  
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">  
+    <!-- Material Cards - CSS-->      
+    <link href="/static/css/material-cards.css" rel="stylesheet">  
+    <!-- PhotoSwipe - CSS-->     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" rel="stylesheet">
     <!-- Custom Styles-->
     <link rel="SHORTCUT ICON" href="/static/img/shortcut-icon.png">  
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Faster+One|Indie+Flower|Pacifico|Faster+One|Permanent+Marker|Poiret+One" rel="stylesheet">
@@ -22,17 +27,17 @@
     <body>
      <!-- Navigation Menu-->
     <nav ng-class="hide-on-small-only">
-      <ul class="side-nav fixed section table-of-contents">
+      <ul class="side-nav fixed section table-of-contents" data-aos="fade-right">
         <li class="logo"><a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
             <h2>Ethan McFarlin<span class="brown-text light">Proffesional Portfolio</span></h2></a></li>
-        <li class="bold"><a aria-label="Navigate to the Overview section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>Overview</span></a></li>
-        <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
-        <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
-        <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
-        <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
-        <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
-        <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-        <li class="bold"><a aria-label="Open Andrew's resume in a new tab" href="https://drive.google.com/file/d/1BmiYE2f_Aeqp5ejiFa1B2AkoeUdILpem/view?usp=sharing" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+        <li class="bold" data-aos="fade-up" ><a aria-label="Navigate to the Overview section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>Overview</span></a></li>
+        <li class="bold" data-aos="fade-up" ><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
+        <li class="bold" data-aos="fade-up" ><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
+        <li class="bold" data-aos="fade-up" ><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
+        <li class="bold" data-aos="fade-up" ><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
+        <li class="bold" data-aos="fade-up" ><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
+        <li class="bold" data-aos="fade-up" ><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
+        <li class="bold" data-aos="fade-up" ><a aria-label="Open Andrew's resume in a new tab" href="https://drive.google.com/file/d/1sZ4nc7KdqHm4da80n6AJAyfmc1UvBJfh/view?usp=sharing" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
       </ul>
     </nav>
     <nav class="hide-on-large only trigger z-depth-1"><a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -47,18 +52,82 @@
         <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-        <li class="bold"><a aria-label="Open Andrew's Resume in a new tab" href="https://drive.google.com/file/d/1BmiYE2f_Aeqp5ejiFa1B2AkoeUdILpem/view?usp=sharing" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+        <li class="bold"><a aria-label="Open Andrew's Resume in a new tab" href="https://drive.google.com/file/d/1sZ4nc7KdqHm4da80n6AJAyfmc1UvBJfh/view?usp=sharing" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
       </ul>
     </nav>
-        
     <main>
-    <section id="intro" class="se ction scrollspy">
+    <!-- Modal Boxes--> 
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+             It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <div class="pswp__container">
+                <!-- don't modify these 3 pswp__item elements, data is added later on -->
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+              </div>
+
+            </div>
+
+    </div>       
+    <section id="intro" class="section scrollspy">
         <div class="animating-bg"></div>
         <h1>     
             <div id="portrait" data-aos="fade-up" data-aos-duration="1500" class="circle parallaxie">
             </div>
             <div class='circle'>
-                <a class='r tooltipped' data-position="right" data-delay="50" data-tooltip="Resume" data-rot='45' href='https://drive.google.com/file/d/1BmiYE2f_Aeqp5ejiFa1B2AkoeUdILpem/view?usp=sharing' target='_blank'>
+                <a class='r tooltipped' data-position="right" data-delay="50" data-tooltip="Resume" data-rot='45' href='https://drive.google.com/file/d/1sZ4nc7KdqHm4da80n6AJAyfmc1UvBJfh/view?usp=sharing' target='_blank'>
                 <i class='fa fa-paperclip' rel='tt-left' title='LinkedIn'></i>
                 </a>
                 <a class='r tooltipped' data-position="left" data-delay="50" data-tooltip="E-mail" data-rot='135' href='mailto:ethanmcfarlin@email.com' target='_blank'>
@@ -85,7 +154,7 @@
         <div class="title-bar" data-aos="fade-up" data-aos-duration="1500" style="background: url(/static/img/about-mesh.png);">
             <div class="section-thumbnail hvr-grow" data-aos="fade-down" data-aos-duration="600"  style="background: url(/static/img/about-icon.png);"></div>
             <h2 class="title-text" data-aos-duration="400" data-aos="fade-left">Overview</h2>
-        </div>  
+        </div> 
     </section>
     <section id="education" class="section scrollspy">
         <div class="title-bar" data-aos="fade-up" data-aos-duration="1500" style="background: url(/static/img/education-mesh.png);">
@@ -104,6 +173,176 @@
             <div class="section-thumbnail hvr-grow" data-aos="fade-down" data-aos-duration="600"  style="background: url(/static/img/projects-icon.png);"></div>
             <h2 class="title-text" data-aos-duration="400" data-aos="fade-left">Projects</h2>
         </div>  
+        <div class="card-layout">
+            <div class="a-container">
+            <!--   <a href="https://codepen.io/pirolab/project/editor/AyBEvm" target="_blank">Angular 2 Version <i class="icon-right"></i></a>  -->
+               <div class="o-card_container">
+                  <div class="o-card" id="career_kickstarter"data-aos="fade-up">
+                     <div class="o-card_header">
+                        <div class="o-card_headerHeroImg"  data-image="/static/img/career-kickstarter_preview.png"></div>
+                        <ul class="o-card-headerList">
+                           <li class="o-card-headerList--openIcons ">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                           </li>
+                           <li class="o-card-headerList--item">
+                              <a class="o-card-headerList--link" target="_blank" href="https://www.facebook.com/Career-Kickstarter-Consultation-577337692620434/?ref=br_rs"><i class="icon-facebook"></i></a>
+                           </li>
+                           <li class="o-card-headerList--item">
+                              <a class="o-card-headerList--link" target="_blank"  href="https://twitter.com/Career_Kickstar"><i class="icon-twitter"></i></a>
+                           </li>
+                           <li class="o-card-headerList--item">
+                              <a class="o-card-headerList--link" target="_blank"  href="https://career-kickstarter.github.io/"><i class="icon-link"></i></a>
+                           </li>
+                           <li class="o-card-headerList--item">
+                              <a class="o-card-headerList--link" target="_blank"  href="https://github.com/EthanMcFarlin/career-kickstarter"><i class="icon-github"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="o-card_body">
+                        <h2 class="o-card_title">Career Kickstarter Website</h2>
+                        <h3 class="o-card_subTitle">HTML, CSS, JS, jQuery</h3>
+                        <p class="o-card_paragraph">As part of the "Future Business Leaders of America" 2017-2018 competition in website design, I built a career guidance site from the ground-up. The project served as an introduction to web design- and for that matter programming as a whole- giving me the knowledge of what it really takes to push the production of a product from its beginning stages all the way to completion. Interestingly, the site stretched my proffesional writting and researching skills just as much as my profficiency in writting code, totalling up to over 20,000 words and countless hours of research.
+                        </p>
+                     </div>
+                     <div class="o-card_footer">
+                        <button id="open1" class="a-readMore waves-effect waves-light btn modal-trigger">View Gallery <i class="icon-right"></i></button>
+                     </div>
+                     <div class="o-modal">
+                        <span class="o-modal__close">
+                        <i class="icon-cancel-circled"></i>
+                        </span>
+                        <h2 class="o-modal__title"></h2>
+                        <div class="o-modal__inner"></div>
+                     </div>
+                     <div class="a-loader">
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                     </div>
+                  </div>
+                  <div class="o-card" data-aos="fade-up" id="android_development">
+                     <div class="o-card_header">
+                        <div class="o-card_headerHeroImg"  data-image="/static/img/app-development_preview.png"></div>
+                     </div>
+                     <div class="o-card_body">
+                        <h2 class="o-card_title">Freelance Android App Development</h2>
+                        <h3 class="o-card_subTitle">MIT App Inventor</h3>
+                        <p class="o-card_paragraph">Introduced to android development through an introductory computer science course in high school, I was immediately intrigued by the prospect of desinging a widely accessible and consumer-oriented product. Since then, I've expanded my knowledge through a range of projects, including medical diagnosis, equation solving and graphing, as well as covalent bonding simulation. These apps are availible for download on the Android play store.  </p>
+                     </div>
+                     <div class="o-card_footer" id="test">
+                        <button id="open2" class="a-readMore waves-effect waves-light btn modal-trigger">View Gallery <i class="icon-right"></i></button>
+                     </div>
+                     <div class="o-modal">
+                        <span class="o-modal__close">
+                        <i class="icon-cancel-circled"></i>
+                        </span>
+                        <h2 class="o-modal__title"></h2>
+                        <div class="o-modal__inner"></div>
+                     </div>
+                     <div class="a-loader">
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                     </div>
+                  </div>
+                  <div class="o-card" id="doherty_tsa" data-aos="fade-up">
+                     <div class="o-card_header">
+                        <div class="o-card_headerHeroImg"  data-image="/static/img/doherty-tsa_preview.png"></div>
+                        <ul class="o-card-headerList">
+                           <li class="o-card-headerList--openIcons ">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                           </li>
+                           <li class="o-card-headerList--item">
+                              <a class="o-card-headerList--link" target="_blank" href="https://twitter.com/dohertypltw"><i class="icon-twitter"></i></a>
+                           </li>
+                           <li class="o-card-headerList--item">
+                              <a class="o-card-headerList--link" target="_blank" href="https://doherty-tsa.github.io/"><i class="icon-link"></i></a>
+                           </li>
+                           <li class="o-card-headerList--item">
+                              <a class="o-card-headerList--link" target="_blank" href="https://github.com/doherty-tsa/doherty-tsa.github.io"><i class="icon-github"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="o-card_body">
+                        <h2 class="o-card_title">DHS Engineering Department Website</h2>
+                        <h3 class="o-card_subTitle">HTML, CSS, JS, jQuery</h3>
+                        <p class="o-card_paragraph">One of the engineering teachers working at my school approached me about an opportunity to enter Colorado's "Technology Student Association" state contest in web design. The prompt challenged competitors to market their school's Career and Technical Education (CTE) program. Over the course of a few weeks of constant iterative improvement alongside two other teammates, I refined my knowledge of the three core web  design languages. In addition, I began to learn the value of incorporating open-source projects into my code. Taking advantage of other creators' abstractions such as Northwestern University's 'Timeline.JS' saved enormous amounts of time, and ushered in my understanding how collaborative programming can be.
+                        </p>
+                     </div>
+                     <div class="o-card_footer">
+                        <button id="open3" class="a-readMore waves-effect waves-light btn modal-trigger">View Gallery <i class="icon-right"></i></button>
+                     </div>
+                     <div class="o-modal">
+                        <span class="o-modal__close">
+                        <i class="icon-cancel-circled"></i>
+                        </span>
+                        <h2 class="o-modal__title"></h2>
+                        <div class="o-modal__inner"></div>
+                     </div>
+                     <div class="a-loader">
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                     </div>
+                  </div>
+                <div class="o-card" id="spiggot_development" data-aos="fade-up">
+                     <div class="o-card_header">
+                        <div class="o-card_headerHeroImg"  data-image="/static/img/spiggot-development_preview.png"></div>
+                     </div>
+                     <div class="o-card_body">
+                        <h2 class="o-card_title">SpiggotMC Plugin Development</h2>
+                        <h3 class="o-card_subTitle">Java</h3>
+                        <p class="o-card_paragraph">While I've mostly ceased my activity in the Minecraft development community, I formerly gained a huge amount of coding knowledge through projects in developing Java plugins as part of the Spiggot framework. Independent hosts used my downloadable extensions to add functions to their servers. In total, across a number of different server extension 'plug-ins', I amassed 5,000+ downloads.
+                        </p> 
+                     </div>
+                     <div class="o-card_footer">
+                        <button id="open4" class="a-readMore waves-effect waves-light btn modal-trigger">View Gallery <i class="icon-right"></i></button>
+                     </div>
+                     <div class="o-modal">
+                        <span class="o-modal__close">
+                        <i class="icon-cancel-circled"></i>
+                        </span>
+                        <h2 class="o-modal__title"></h2>
+                        <div class="o-modal__inner"></div>
+                     </div>
+                     <div class="a-loader">
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                     </div>
+                  </div>                 
+                   <div class="o-card" id="youtube_management" data-aos="fade-up">
+                     <div class="o-card_header">
+                        <div class="o-card_headerHeroImg"  data-image="/static/img/channel-management_preview.png"></div>
+                     </div>
+                     <div class="o-card_body">
+                        <h2 class="o-card_title">YouTube Channel Management</h2>
+                        <h3 class="o-card_subTitle">Marketing, Graphic Design, Video Editing</h3>
+                        <p class="o-card_paragraph">YouTube content production has long been a passion of mine, dating back as far as 2012 when I started my first channel. I have since accrued experience in not only filming, scripting, and editing videos, but also the thought-process that drives creative workflow. I firmly beileve that inside every video maker is a marketer who must meet the demands of an ever-changing audience. This lesson has gradually become apparent to me, throughout the process of accumulating over 300,000 views and attracting more than 1,000 subscribers. </p>
+                     </div>
+                     <div class="o-card_footer">
+                        <button id="open5" class="a-readMore waves-effect waves-light btn modal-trigger">View Gallery <i class="icon-right"></i></button>
+                     </div>
+                     <div class="o-modal">
+                        <span class="o-modal__close">
+                        <i class="icon-cancel-circled"></i>
+                        </span>
+                        <h2 class="o-modal__title"></h2>
+                        <div class="o-modal__inner"></div>
+                     </div>
+                     <div class="a-loader">
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                        <div class="a-loader__bar"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
     </section>  
     <section id="skills" class="section scrollspy">
         <div class="title-bar" data-aos="fade-up" data-aos-duration="1500" style="background: url(/static/img/skills-mesh.png);">
@@ -122,19 +361,24 @@
             <div class="section-thumbnail hvr-grow" data-aos="fade-down" data-aos-duration="600"  style="background: url(/static/img/contact-icon.png);"></div>
             <h2 class="title-text" data-aos-duration="400" data-aos="fade-left">Contact</h2>
         </div>  
-    </section>         
+    </section>
     </main>
-    <footer id="copyright">
+    <section id="copyright">
         <div style="width:100vw;text-align:center;" class="button"><a target="_blank" href="/static/Personal%20Portfolio%20Works%20Consulted.pdf"><div class="hvr-grow" id="copyright-symbol"></div></a></div>
-    </footer>
+    </section>
+    <a href="javascript:" id="top"><i class="fa fa-angle-up"></i></a>
+
     <!-- Libraries - JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
     <script src="/js/jquery.arctext.js" type="text/javascript"></script>  
     <script src="/js/parallaxie.js"></script>    
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="/js/material-cards.js"></script>         
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
+    <script src="/js/photoswipe-custom.js"></script>     
     <!-- Custom Written - JS-->   
-    <script src="/js/animate.js"></script>
     <script src="/js/script.js" type="text/javascript"></script>
 </body>
 </html>

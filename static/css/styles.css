@@ -97,7 +97,7 @@ li.logo span {
 .container {
 	width: 95%
 }
-h3 {
+nav > h3 {
 	font-weight: 200;
 	margin-bottom: 60px;
 	margin-top: 0;
@@ -134,7 +134,7 @@ h3 {
 		height: 56px;
 		line-height: 56px;
 	}
-	h3 {
+	nav > h3 {
 		padding: 20px 30px;
   	margin-bottom: 40px;
 	}
@@ -169,7 +169,7 @@ h3 {
     display: block;
     font-size: 14px;
 	}
-	h3,
+	nav > h3,
 	.container {
     position: relative;
     top: 64px;
@@ -321,7 +321,7 @@ h3 {
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-play-state: running;
-  -webkit-animation-duration: 155s;
+  -webkit-animation-duration: infinite;
   -webkit-animation-timing-function: linear;
   -webkit-animation-delay: 0s;
   -webkit-animation-iteration-count: infinite;
@@ -505,3 +505,43 @@ h3 {
   }
 }
 
+#top{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#top i{
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 10px;
+    font-size: 29px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#top:hover{
+    background: rgba(0, 0, 0, 0.9);
+}
+#top:hover i{
+    color: #fff;
+    top: 5px;
+}
