@@ -13,19 +13,7 @@ body {
 a {
 	color: #009688;
 }
-blockquote {
-	border-left: 5px solid #795548;
-	color: #795548;
-	font-size: 125%;
-	font-weight: 400;
-	margin: 20px 0;
-	padding-left: 1.5rem;
-}
 
-blockquote * {
-  font-size: inherit;
-  line-height: inherit;
-}
 .text-center {
 	text-align: center;
 }
@@ -315,7 +303,7 @@ nav > h3 {
   position: fixed;
   animation-name: animate-bg;
   -webkit-animation-name: animate-bg;
-  animation-duration: 55s;
+  animation-duration: 255s;
   animation-timing-function: linear;
   animation-delay: 5s;
   animation-iteration-count: infinite;
@@ -544,4 +532,66 @@ nav > h3 {
 #top:hover i{
     color: #fff;
     top: 5px;
+}
+
+
+/*------------------------------
+  Experience Cards
+------------------------------ */
+
+
+.divided {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.company-name:hover {
+    transition: 0.5s all ease;
+    opacity: 0.8;
+}
+
+.company-name {
+    transition: 0.5s all ease;
+}
+
+.company-logo {
+  margin-left:30px;
+}
+.hoverable {
+    transition: 0.5 all ease;
+}
+.hoverable:hover {
+    transition:0.5 all ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.list-description {
+  margin-left:35px;
+}
+
+.company-description {
+  padding: 5px;
+  background: #F2F7F8;
+  padding-left:35px;
+  
+}
+
+.underline-dotted {
+         border-bottom: 1px dashed #999;
+  width:60%;
+}
+
+#pixure > blockquote {
+    border-left-color:  color: #6BAFF5;
+}
+
+#mcverge > blockquote {
+    color: #FC5555;
+}
+
+
+#resourcepile > blockquote {
+    color: #199586;
 }
