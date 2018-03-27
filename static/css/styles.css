@@ -357,7 +357,7 @@ nav > h3 {
     font-family: Roboto;
     color: #fff;
     font-weight:100;
-    margin-left:15vw;
+    margin-left:270px;
 }
 
 /*------------------------------
@@ -367,6 +367,68 @@ nav > h3 {
 #about {
     height:200px;
 }
+
+/*------------------------------
+  Experience Cards
+------------------------------ */
+
+
+.divided {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.company-name:hover {
+    transition: 0.5s all ease;
+    opacity: 0.8;
+}
+
+.company-name {
+    transition: 0.5s all ease;
+}
+
+.company-logo {
+  margin-left:30px;
+}
+.hoverable {
+    transition: 0.5 all ease;
+}
+.hoverable:hover {
+    transition:0.5 all ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.list-description {
+  margin-left:35px;
+}
+
+.company-description {
+  padding: 5px;
+  background: #F2F7F8;
+  padding-left:35px;
+  
+}
+
+.underline-dotted {
+         border-bottom: 1px dashed #999;
+  width:60%;
+}
+
+#pixure > blockquote {
+    border-left-color:  color: #6BAFF5;
+}
+
+#mcverge > blockquote {
+    color: #FC5555;
+}
+
+
+#resourcepile > blockquote {
+    color: #199586;
+}
+
 
 /*------------------------------
   Footer
@@ -380,7 +442,7 @@ nav > h3 {
                          box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 }
 #vector-background {
-    height:500px;
+    height:200px;
 }
 
 #copyright-symbol {
@@ -534,64 +596,3 @@ nav > h3 {
     top: 5px;
 }
 
-
-/*------------------------------
-  Experience Cards
------------------------------- */
-
-
-.divided {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.company-name:hover {
-    transition: 0.5s all ease;
-    opacity: 0.8;
-}
-
-.company-name {
-    transition: 0.5s all ease;
-}
-
-.company-logo {
-  margin-left:30px;
-}
-.hoverable {
-    transition: 0.5 all ease;
-}
-.hoverable:hover {
-    transition:0.5 all ease;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
-.list-description {
-  margin-left:35px;
-}
-
-.company-description {
-  padding: 5px;
-  background: #F2F7F8;
-  padding-left:35px;
-  
-}
-
-.underline-dotted {
-         border-bottom: 1px dashed #999;
-  width:60%;
-}
-
-#pixure > blockquote {
-    border-left-color:  color: #6BAFF5;
-}
-
-#mcverge > blockquote {
-    color: #FC5555;
-}
-
-
-#resourcepile > blockquote {
-    color: #199586;
-}
