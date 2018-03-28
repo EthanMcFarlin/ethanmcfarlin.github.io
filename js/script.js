@@ -142,4 +142,10 @@ window.onload = function() {
     "complete" === document.readyState && (document.detachEvent("onreadystatechange", arguments.callee), domReady())
 });
 
+// Progress Bar
 
+jQuery('.skillbar').each(function(){
+	jQuery(this).find('.skillbar-bar').animate({
+		width:jQuery(this).attr('data-percent')
+	},2000);
+});
