@@ -391,7 +391,9 @@ nav > h3 {
 .c2a-icon, .promo-caption {
     margin-left:-15px;
 }
-
+.promo-caption {
+    margin-left: -45px;
+}
 
 @media only screen and (max-width:1400px) {
     .promo-caption {
@@ -584,13 +586,6 @@ nav > h3 {
 }
 .header--shadow.header--raiseUp:hover {
   transform: translate(-5px, 0);
-}
-
-
-svg {
-  line-height: 1.2;
-    padding:20px;
-  height:2.5em;
 }
 
 .header--svg text,
@@ -802,7 +797,45 @@ svg {
   height: 200px;
   width: 400px;
 }
-
+@media only screen and (max-width:1200px) {
+    .col-chart {
+        width:200px;
+    }  
+}
+@media only screen and (max-width:725px) {
+    .col-chart {
+        display: none;
+    }  
+    .chart-box-col {
+        width:65%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .chart-box-col {
+        width:45%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .col-chart {
+        display: none;
+    }  
+    .chart-box-col {
+        display:none;
+    }
+    .skill-bar-percent {
+        opacity:0;
+    }
+}
+@media only screen and (max-width:600px) {
+    .title-text {
+        margin-left:180px;
+    }
+}
+@media only screen and (max-width:445px) {
+    .title-text {
+        display:none;
+    }
+}
 .skillbar {
   font-family: 'Open Sans', 'sans-serif';
 	position:relative;
