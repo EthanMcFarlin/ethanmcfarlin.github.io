@@ -375,8 +375,8 @@ nav > h3 {
   display: block;
   margin: 60px auto;
   background-color: white;
-  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
   -webkit-animation-name: mainCard;
           animation-name: mainCard;
   -webkit-animation-duration: 1s;
@@ -656,10 +656,8 @@ nav > h3 {
 }
 .hoverable:hover {
     transition:0.5 all ease;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
 }
 .list-description {
   margin-left:35px;
