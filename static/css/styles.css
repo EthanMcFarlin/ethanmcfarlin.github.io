@@ -364,7 +364,265 @@ nav > h3 {
 /*------------------------------
   About
 ------------------------------ */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+
+.mainCard {
+  text-align: center;
+  display: block;
+  margin: 60px auto;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+  -webkit-animation-name: mainCard;
+          animation-name: mainCard;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+    height:750px;
+}
+
+.c2a-icon, .promo-caption {
+    margin-left:-15px;
+}
+
+
+@media only screen and (max-width:1400px) {
+    .promo-caption {
+        display:none;
+    }
+    .c2a-icon {
+        margin-left:-25px;
+    }
+}
+
+@media only screen and (max-width: 1275px) {
+     .c2a-icon {
+       opacity:0;
+    }   
+}
+@media only screen and (max-width:1110px) {
+    .mainCard {
+        height: 850px;
+    }
+}
+
+@media only screen and (max-width:830px) {
+    .mainCard {
+        height: 950px;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .mainCard {
+        height: auto;
+    }
+}
+
+
+@-webkit-keyframes mainCard {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes mainCard {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+.mainCardHeader {
+  background-color: #7BB1ED;
+  height: 100px;
+  width: 100%;
+  -webkit-animation-name: mainCardHeader;
+          animation-name: mainCardHeader;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.mainCardSubHeader {
+  height: 20px;
+  background: #D9E4F5;
+}
+@-webkit-keyframes mainCardHeader {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@keyframes mainCardHeader {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+.mainCardContent {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  width: 90%;
+  height:250px;
+}
+
+.miniCard {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 20px 20px 0;
+  background: url(https://i.imgur.com/tHIvvpy.png);
+  height: 225px;
+  width: 225px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-animation-name: miniCard;
+          animation-name: miniCard;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.c2a-icon {
+  background: url(https://i.imgur.com/D7VVymH.png);
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  align-content:center;
+  
+}
+.promo-caption, .light, .c2a-icon {
+    position:relative;
+    top:-250px;
+}
+.promo-caption {
+    font-family: Concert One;
+    font-size:20pt;
+    opacity: 0.4;
+}
+
+.material-icons {
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform:scale(2);
+  color: #D7E3F4;
+  
+}
+
+.hide {
+  opacity:0;
+    height:1px;
+}
+@-webkit-keyframes miniCard {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes miniCard {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.header {
+  display: inline-block;
+    position: relative;
+    top:-325px;
+  margin-left:55px;
+    z-index: 10;
+  text-align: center;
+  font-family: "Permanent Marker";
+  font-size: 65px;
+  color: #8EBEEC;
+  text-decoration: none;
+  text-shadow: 1.5px 1.5px 0 #8EBEEC, -1.5px -1.5px 0 #8EBEEC, -1.5px -1.5px 0 #8EBEEC, -1.5px 1.5px 0 #8EBEEC, 1.5px -1.5px 0 #8EBEEC;
+  transition: all 400ms ease-in-out;
+}
+
+.header--raiseUp:hover {
+  transform: translate(-9px, -9px);
+  text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333, 0.7778174593px 0.7778174593px 0 #D7E3F4, 1.5556349186px 1.5556349186px 0 #D7E3F4, 2.3334523779px 2.3334523779px 0 #D7E3F4, 3.1112698372px 3.1112698372px 0 #D7E3F4, 3.8890872965px 3.8890872965px 0 #D7E3F4, 4.6669047558px 4.6669047558px 0 #D7E3F4, 5.4447222151px 5.4447222151px 0 #D7E3F4, 6.2225396744px 6.2225396744px 0 #D7E3F4, 7.0003571337px 7.0003571337px 0 #D7E3F4, 7.7781745931px 7.7781745931px 0 #D7E3F4;
+}
+
+.header--shadow:hover {
+  transform: translate(5px, 0);
+}
+.header--shadow.header--raiseUp:hover {
+  transform: translate(-5px, 0);
+}
+
+
+svg {
+  line-height: 1.2;
+    padding:20px;
+  height:2.5em;
+}
+
+.header--svg text,
+.header--svg stop {
+  transition: all 350ms ease-in-out;
+}
+.header--svg text {
+  text-transform: uppercase;
+  fill: url(#striped);
+  text-shadow: 1.5px 1.5px 0 #303030, -1.5px -1.5px 0 #303030, -1.5px -1.5px 0 #303030, -1.5px 1.5px 0 #303030, 1.5px -1.5px 0 #303030;
+}
+.header--svg:hover text {
+  text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333, 0.7778174593px 0.7778174593px 0 #D7E3F4, 1.5556349186px 1.5556349186px 0 #D7E3F4, 2.3334523779px 2.3334523779px 0 #D7E3F4, 3.1112698372px 3.1112698372px 0 #D7E3F4, 3.8890872965px 3.8890872965px 0 #D7E3F4, 4.6669047558px 4.6669047558px 0 #D7E3F4, 5.4447222151px 5.4447222151px 0 #D7E3F4, 6.2225396744px 6.2225396744px 0 #D7E3F4, 7.0003571337px 7.0003571337px 0 #D7E3F4, 7.7781745931px 7.7781745931px 0 #D7E3F4;
+}
+.header--svg stop {
+  stop-color: #D7E3F4;
+}
+.header--svg:hover stop {
+  stop-color: #fff;
+}
+.header--svg:hover stop:nth-child(2), .header--svg:hover stop:nth-child(3) {
+  stop-color: #8EBEEC;
+}
+
+
+.bio {
+    text-align: left;
+    position:relative;
+    top:-350px;
+    width:80%;
+    margin-left:6vw;
+}
 
 /*------------------------------
   Experience Cards
