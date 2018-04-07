@@ -1051,12 +1051,13 @@ nav > h3 {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #top i{
     color: #fff;
     margin: 0;
     position: relative;
     left: 16px;
-    top: 10px;
+    top: 9px;
     font-size: 29px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
