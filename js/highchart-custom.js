@@ -9,7 +9,7 @@ const context = {
 			"marketValue": 'HTML, CSS, JS, jQuery, PHP, SQL'
 		}, {
 			"assetClass": "Graphic Design",
-			"holdings": 40,
+			"holdings": 30,
 			"marketValue": 'Photoshop, Camtasia Studio, Adobe Premiere, Adobe After Effects'
 		}, {
 			"assetClass": "Other Languages",
