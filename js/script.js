@@ -74,7 +74,7 @@ $(document).ready(function() {
             duration: 1500,
         })
     });
-    }, 6000);
+    }, 100);
 });
 
 
@@ -136,7 +136,7 @@ window.onload = function() {
     pageload()
 }, setTimeout(function() {
     document.body.className += " loaded"
-}, 6000), document.addEventListener ? document.addEventListener("DOMContentLoaded", function() {
+}, 3000), document.addEventListener ? document.addEventListener("DOMContentLoaded", function() {
     document.removeEventListener("DOMContentLoaded", arguments.callee, !1), domReady()
 }, !1) : document.attachEvent && document.attachEvent("onreadystatechange", function() {
     "complete" === document.readyState && (document.detachEvent("onreadystatechange", arguments.callee), domReady())

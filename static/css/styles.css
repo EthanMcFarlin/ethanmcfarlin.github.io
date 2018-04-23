@@ -632,9 +632,18 @@ nav > h3 {
     margin-right:25px;
     transition: 0.35s all ease;
 }
-.tag:hover {
+.tag:hover, .category:hover {
    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); 
 }
+
+.category {
+    border-radius:4px;
+    padding:5px;
+    color: #fff;
+    margin-right:25px;
+    transition: 0.35s all ease;    
+}
+
 .divided {
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
