@@ -293,46 +293,6 @@ nav > h3 {
 	color: #fff;
 }
 
-.animating-bg {
-  background-image: url("/static/img/kbb19w.png");
-  background-repeat: repeat;
-  height: 100%;
-  width: 170%;
-  transform: rotate(45deg);
-  top: -50%;
-  left: -50%;
-  position: fixed;
-  animation-name: animate-bg;
-  -webkit-animation-name: animate-bg;
-  animation-duration: 255s;
-  animation-timing-function: linear;
-  animation-delay: 25s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-play-state: running;
-  -webkit-animation-duration: infinite;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-  -webkit-animation-play-state: running;
-   opacity:0.08;
-}
-
-@keyframes animate-bg
-{
-	0%   {background-position: 0 0;transform: rotate(45deg) scale(1);}
-	50%   {background-position: 0 1000%;transform: rotate(45deg) scale(1);}
-  75%   {transform: rotate(45deg) scale(2);}
-  100%   {background-position: 0 1600%;transform: rotate(45deg) scale(2.75);}
-}
-@-webkit-keyframes animate-bg
-{
-	0%   {background-position: 0 0;transform: rotate(45deg) scale(1);}
-	50%   {background-position: 0 1000%;transform: rotate(45deg) scale(1);}
-  75%   {transform: rotate(45deg) scale(2); opacity: 1}
-  100%   {background-position: 0 1600%;transform: rotate(45deg) scale(2.75); opacity: 0;}
-}
 
 /*------------------------------
  Any Section
