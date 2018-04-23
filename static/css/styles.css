@@ -306,7 +306,7 @@ nav > h3 {
   -webkit-animation-name: animate-bg;
   animation-duration: 255s;
   animation-timing-function: linear;
-  animation-delay: 5s;
+  animation-delay: 25s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-play-state: running;
