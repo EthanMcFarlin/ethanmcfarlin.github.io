@@ -74,17 +74,7 @@ $(document).ready(function() {
             duration: 1500,
         })
     });
-    }, 100);
-});
-
-
-// Parallax Effects
-
-$('.parallaxie').parallaxie({
-	speed: 0.5,
-	offset: -15,
-    size: '850px',
-    pos_x: '60%',
+    }, 3000);
 });
 
 // Animate on Scroll
