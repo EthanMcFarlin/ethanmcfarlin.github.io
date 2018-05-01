@@ -23,29 +23,6 @@ $(document).ready(function() {
 
       });
 
-// Blur Scroll
-
-        $(document).scroll(function() {
-            var header = $('#intro').height();
-            var scrolled = $(document).scrollTop();
-            var opacity = 1 - scrolled / header;
-            var blur = scrolled / header * 10;
-            if (blur < 10) {
-                $('h1').css({'filter': 'blur('+ blur + 'px)'});
-            }
-            $('#intro').css({'opacity': opacity});
-            $('h1').css({'opacity': opacity});
-            if (scrolled > header * 0.25) {
-                arrow.css({'box-shadow': '0 -50px lightgrey inset',
-                                     'color': 'black',
-                                     'line-height': '70px'});
-            } else {
-                arrow.css({'box-shadow': '',
-                                     'color': '',
-                                     'line-height': ''});
-            }
-        });
-
 // Icon Animation
 
 $(document).ready(function() {
