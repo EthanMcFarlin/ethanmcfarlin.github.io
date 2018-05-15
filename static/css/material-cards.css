@@ -89,7 +89,7 @@
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: #109bce;
   z-index: 1111;
   transition: all .4s;
 }
@@ -259,7 +259,7 @@
   left: -2%;
   width: 104%;
   height: 30px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   z-index: 1221;
   transform: skew(0, 2deg);
@@ -478,7 +478,7 @@
   margin: -5px 0 0 0;
   padding: 0 30px  30px 30px;
   position: relative;
-  background: #f9f9f9;
+  background: #fff;
   transition: all .3s;
 }
 
