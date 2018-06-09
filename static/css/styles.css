@@ -192,6 +192,14 @@ nav > h3 {
     -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.8);
         -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.8);
 			-o-box-shadow: 0 0 10px  rgba(0,0,0,0.86);
+      -webkit-animation-name: miniCard;
+          animation-name: miniCard;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 #intro h1 {
@@ -204,6 +212,7 @@ nav > h3 {
   font-size: 60px;
   margin-left:2vw;
     transform:translateY(-100px);
+    
 }
 
 
@@ -273,6 +282,7 @@ nav > h3 {
 	line-height: .75;
 	margin: 10px 0;
     z-index:-5;
+    
 }
 /* styling my button */
 

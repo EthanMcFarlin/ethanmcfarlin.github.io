@@ -135,3 +135,4 @@ document.getElementById('open2').onclick = BopenPhotoSwipe;
 document.getElementById('open3').onclick = CopenPhotoSwipe;
 
 
+
