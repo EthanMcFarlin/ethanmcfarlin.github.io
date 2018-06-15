@@ -177,7 +177,6 @@ nav > h3 {
 
 #intro{
     height: 100vh;
-    background: url(/static/img/background-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
