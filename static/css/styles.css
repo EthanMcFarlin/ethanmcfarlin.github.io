@@ -471,7 +471,7 @@ nav > h3 {
 }
 
 .c2a-icon {
-  background: url(https://i.imgur.com/D7VVymH.png);
+  background: url(/static/img/c2a-icon.png);
   height: 150px;
   width: 150px;
   text-align: center;
