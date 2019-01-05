@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome Icon - CSS-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Hover - CSS-->    
     <link rel="stylesheet" href="https://cdn.bootcss.com/hover.css/2.1.1/css/hover-min.css">   
     <!-- Animate on Scroll - CSS-->  
@@ -120,7 +120,7 @@
             </div>
 
     </div>       
-    <section id="intro" class="section scrollspy">
+    <!--<section id="intro" class="section scrollspy" >
         <h1>     
             <div id="portrait" class="circle">
             </div>
@@ -147,8 +147,8 @@
              <h1 class="animated-text" data-aos="fade"><span style="font-family: Permanent Marker;">Mcfarlin</span></h1>
             </div></div>          
         </h1>
-    </section>
-    <section id="about" class="section scrollspy">
+    </section>-->
+    <section id="about" class="section scrollspy" style="margin-top:50px;">
         <div class="title-bar" data-aos="fade-up" data-aos-duration="1500" style="background: url(/static/img/about-mesh.png);">
             <div class="section-thumbnail hvr-grow" data-aos="fade-down" data-aos-duration="600"  style="background: url(/static/img/about-icon.png);"></div>
             <h2 class="title-text" data-aos-duration="400" data-aos="fade-left">Overview</h2>
@@ -161,46 +161,66 @@
           <div class="mainCardContent"  data-aos="fade-up" data-aos-duration="2500" >
             <div class="miniCard hoverable"></div>
                   <div class="row">
-                    <div class="col s2">
+                    <div class="col s2" style="transform:translateX(100px);">
                       <div class="center promo promo-example">
                         <div class="c2a-icon valign-wrapper">
-                        <i class="material-icons">mode_edit</i>
+                        <a class="fa-icon" target="_blank" href="https://www.linkedin.com/in/ethan-mcfarlin-187ba2163">
+                            <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
+                                <path fill="#D7E1F3" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
+                            </svg>
+                        </a>
                         </div>
-                        <p class="promo-caption">Focused</p>
+                        <!--<p class="promo-caption">Focused</p>-->
                       </div>
                     </div>
-                    <div class="col s2">
+                    <div class="col s2" style="opacity:0;">
                       <div class="center promo promo-example">
                         <div class="c2a-icon valign-wrapper">
-                        <i class="material-icons">timeline</i>
+                            <!--<a href="https://github.com/EthanMcFarlin" target="_blank" class="fa-icon">-->
+                                <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
+                                    <path fill="#D7E1F3" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            <!--</a>-->
                         </div>
-                        <p class="promo-caption">Professional</p>
+                        <!--<p class="promo-caption">Professional</p>-->
                       </div>
                     </div>
-                     <div class="col s2 hide">
+                    <div class="col s2 hide" style>
                       <div class="center promo promo-example">
-                        <i class="material-icons"></i>
+                            <svg style="width:24px;height:24px;" class="fa-icon" viewBox="0 0 24 24">
+                                <path fill="#D7E1F3" d="M11.748 5.773S11.418 5 10.914 5c-.496 0-.754.229-.926.387S6.938 7.91 6.938 7.91s-.837.731-.773 2.106c.054 1.375.323 3.332 1.719 6.058 1.386 2.72 4.855 6.876 7.047 8.337 0 0 2.031 1.558 3.921 2.191.549.173 1.647.398 1.903.398.26 0 .719 0 1.246-.385.536-.389 3.543-2.807 3.543-2.807s.736-.665-.119-1.438c-.859-.773-3.467-2.492-4.025-2.944-.559-.459-1.355-.257-1.699.054-.343.313-.956.828-1.031.893-.112.086-.419.365-.763.226-.438-.173-2.234-1.148-3.899-3.426-1.655-2.276-1.837-3.02-2.084-3.824a.56.56 0 0 1 .225-.657c.248-.172 1.161-.933 1.161-.933s.591-.583.344-1.27-1.906-4.716-1.906-4.716z" />
+                            </svg>
                       </div>
                     </div>
-                      <div class="col s2 hide">
+                    <div class="col s2 hide">
                       <div class="center promo promo-example">
-                        <i class="material-icons"></i>
+                        <a href="https://github.com/EthanMcFarlin" target="_blank" class="fa-icon">
+                                <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
+                                    <path fill="#D7E1F3" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </a>
                       </div>
                     </div>           
-                    <div class="col s2">
+                    <div class="col s2" style="opacity:0;">
                       <div class="center promo promo-example">
                         <div class="c2a-icon valign-wrapper">
-                        <i class="material-icons">group</i>
+                            <svg style="width:24px;height:24px;" class="fa-icon" viewBox="0 0 24 24">
+                                <path fill="#D7E1F3" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
+                            </svg>
                         </div>
-                        <p class="promo-caption">Communicative</p>
+                        <!--<p class="promo-caption">Communicative</p>-->
                       </div>
                     </div>
-                    <div class="col s2">
+                    <div class="col s2" style="transform:translateX(-100px);">
                       <div class="center promo promo-example">
                         <div class="c2a-icon valign-wrapper">
-                        <i class="material-icons">brush</i>
+                            <a href="https://github.com/EthanMcFarlin" target="_blank" class="fa-icon">
+                                <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
+                                    <path fill="#D7E1F3" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </a>
                         </div>
-                        <p class="promo-caption">Innovative</p>
+                        <!--<p class="promo-caption">Innovative</p>-->
                       </div>
                     </div>
                   </div>
@@ -220,14 +240,36 @@
               <text y="1.5em">About</text>
             </svg>
           </a>
-            
-            <div class="bio">
-            <blockquote style="border-left-color: #74AEE9;" data-aos="fade-up" data-aos-duration="2000" >I'm a high school junior and aspiring computer scientist from Colorado Springs. Over the past few years as I've moved through early stages in my education, I've fostered an interest in computing, design, and outreach.<br><br> I'm searching for work experience, mentor-ship/shadowing opportunities, or internships that will give me a chance to soak up as much industry knowledge as possible.</blockquote>
+    <div class="container" id="c2a" style="transform:translateY(-300px);">
+        <div class="row">
+            <div class="col l6 m6 s12">
+                <div class="row">
+                    <div class="container col l6">
+                        <blockquote style="border-left-color:#9DA6D6;text-align:left;"><span class="underline-dotted">Advocate</span> </blockquote>
+                        <p class="list-description" style="font-size:13px;text-align:left;margin-left:0px;">I am passionately commited to civic engagement as a Youth Liason serving El Paso County, Colorado Springs City Council, and the United States Olympic Commitee. Advising my local government has offered the opportunity to soak up as much exposure as possible to how technology factors into decision making in the public sector. <br><br>Outside of civics, I help manage infastructure for a grassroots political organization of over 3,000 members. </p>
+                    </div>
+                    <div class="container col l6">
+                        <blockquote style="border-left-color:#9DA6D6;text-align:left;"><span class="underline-dotted">Innovator</span> </blockquote>
+                        <p class="list-description" style="font-size:13px;text-align:left;margin-left:0px;">In addition to working as a software development intern at a local edtech company, I serve as the founder of a congressionally-endorsed mental health app that provides abuse victims with a personalized path towards recovery.<br><br>In the environmental-tech space, I am the creator of an app that uses machine learning technology to help mitigate the effects of global warming. The research is competing in the MIT THINK and Conrad Spirit of Innovation Challenges.</p>
+                    </div>
+                </div>
             </div>
-        </div>      
+            <div class="col l6 m6 s12">
+                <div class="row">
+                    <div class="container col l6">
+                        <blockquote style="border-left-color:#9DA6D6;text-align:left;"><span class="underline-dotted">Volunteer</span> </blockquote>
+                        <p class="list-description" style="font-size:13px;text-align:left;margin-left:0px;">Emboldened to help solve Colorado Spring's homelessness crisis, I provide technical assistance for a local nonprofit called the Springs Recovery Connection, a major rehabilitation resource around Colorado Springs.<br><br>Along the same lines in another branch of social work, I also volunteer as a web developer and social media manager for a local autism center that works directly with children suffering from developmental handicaps. </p>
+                    </div>
+                    <div class="container col l6">
+                        <blockquote style="border-left-color:#9DA6D6;text-align:left;"><span class="underline-dotted">Student</span> </blockquote>
+                        <p class="list-description" style="font-size:13px;text-align:left;margin-left:0px;">I'm dual-enrolled at UCCS and Doherty High School, where I take a rigorous courseload of honors and Advanced Placement (AP) classes. I'm currently ranked at the top of my high school graduating class of 2020. <br><br>As far as extracurriculars, I help lead my school's VEX Robotics, Technology Student Association (TSA), Future Business Leaders of America (FBLA), National Honor Society (NHS), and Aerospace programs. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
           </div> 
         </div>
-
     </section>
     <section id="education" class="section scrollspy">
         <div class="title-bar" data-aos="fade-up" data-aos-duration="1500" style="background: url(/static/img/education-mesh.png);">
@@ -978,7 +1020,19 @@
                 </div>
               </div>
             </div>
-          </div>            
+            <div class="col s12 m6">
+              <div class="card hoverable" data-aos="fade-up">
+                <div class="card-content">
+                  <p><span class="card-title"><a href="https://www.congressionalappchallenge.us/" target="_blank" class="hoverline lighten" style="color:#B398DA;">Congressional Endorsement Recipient</a></span></p>
+                    <blockquote style="border-left-color:#B398DA;"><span class="underline-dotted">Congressional App Challenge | December 2018</span></blockquote>
+                  <ul>
+                    <li>I was recognized by Orlando Congresswomen Stephanie Murphy alongside 3 other co-founders for developing a microblogging application that helps victims of mental health and abuse seek a personalized path towards recovery.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>  
+            
         </div>
     </section>  
     </main>

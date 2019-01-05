@@ -358,6 +358,12 @@ nav > h3 {
     height:750px;
 }
 
+@media only screen and (max-width: 1450px) {
+    .mainCard {
+        height: 1000px;
+    }
+}
+
 .c2a-icon, .promo-caption {
     margin-left:-15px;
 }
@@ -381,13 +387,15 @@ nav > h3 {
 }
 @media only screen and (max-width:1110px) {
     .mainCard {
-        height: 850px;
+        height: 1150px;
     }
 }
-
-@media only screen and (max-width:830px) {
+@media only screen and (max-width: 900px) {
     .mainCard {
-        height: 950px;
+        height: 1300px;
+    }
+    #c2a {
+        margin-top:-200px;
     }
 }
 
@@ -488,12 +496,12 @@ nav > h3 {
     opacity: 0.4;
 }
 
-.material-icons {
+.fa-icon {
   left: 0;
   right: 0;
   margin: auto;
   transform:scale(2);
-  color: #D7E3F4;
+  color: #D7E3F4 !important;
   
 }
 
@@ -546,7 +554,7 @@ nav > h3 {
   transition: all 400ms ease-in-out;
 }
 
-.header--raiseUp:hover {
+.header--raiseUp {
   transform: translate(-9px, -9px);
   text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333, 0.7778174593px 0.7778174593px 0 #D7E3F4, 1.5556349186px 1.5556349186px 0 #D7E3F4, 2.3334523779px 2.3334523779px 0 #D7E3F4, 3.1112698372px 3.1112698372px 0 #D7E3F4, 3.8890872965px 3.8890872965px 0 #D7E3F4, 4.6669047558px 4.6669047558px 0 #D7E3F4, 5.4447222151px 5.4447222151px 0 #D7E3F4, 6.2225396744px 6.2225396744px 0 #D7E3F4, 7.0003571337px 7.0003571337px 0 #D7E3F4, 7.7781745931px 7.7781745931px 0 #D7E3F4;
 }
@@ -563,20 +571,21 @@ nav > h3 {
   transition: all 350ms ease-in-out;
 }
 .header--svg text {
+  color: #96BCEF !important;
   text-transform: uppercase;
   fill: url(#striped);
   text-shadow: 1.5px 1.5px 0 #303030, -1.5px -1.5px 0 #303030, -1.5px -1.5px 0 #303030, -1.5px 1.5px 0 #303030, 1.5px -1.5px 0 #303030;
 }
-.header--svg:hover text {
+.header--svg text {
   text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333, 0.7778174593px 0.7778174593px 0 #D7E3F4, 1.5556349186px 1.5556349186px 0 #D7E3F4, 2.3334523779px 2.3334523779px 0 #D7E3F4, 3.1112698372px 3.1112698372px 0 #D7E3F4, 3.8890872965px 3.8890872965px 0 #D7E3F4, 4.6669047558px 4.6669047558px 0 #D7E3F4, 5.4447222151px 5.4447222151px 0 #D7E3F4, 6.2225396744px 6.2225396744px 0 #D7E3F4, 7.0003571337px 7.0003571337px 0 #D7E3F4, 7.7781745931px 7.7781745931px 0 #D7E3F4;
 }
 .header--svg stop {
   stop-color: #D7E3F4;
 }
-.header--svg:hover stop {
+.header--svg stop {
   stop-color: #fff;
 }
-.header--svg:hover stop:nth-child(2), .header--svg:hover stop:nth-child(3) {
+.header--svg stop:nth-child(2), .header--svg stop:nth-child(3) {
   stop-color: #8EBEEC;
 }
 
@@ -640,6 +649,7 @@ nav > h3 {
 }
 .list-description {
   margin-left:35px;
+  color: rgba(26,26,26,.7);
 }
 
 .company-description {
