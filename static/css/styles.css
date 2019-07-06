@@ -650,6 +650,8 @@ nav > h3 {
 .list-description {
   margin-left:35px;
   color: rgba(26,26,26,.7);
+  list-style-position: inside;
+  text-indent: -1em;
 }
 
 .company-description {
