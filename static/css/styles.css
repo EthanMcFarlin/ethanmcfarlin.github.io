@@ -330,6 +330,12 @@ nav > h3 {
     margin-left:270px;
 }
 
+@media only screen and (min-width:1800px) {
+    .title-text {
+        margin-left:350px;
+    }
+}
+
 
 /*------------------------------
   About
@@ -355,7 +361,7 @@ nav > h3 {
           animation-delay: 0s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-    height:750px;
+    height:770px;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -392,13 +398,21 @@ nav > h3 {
 }
 @media only screen and (max-width: 900px) {
     .mainCard {
-        height: 1300px;
+        height: 1500px;
+    }
+    #intro-text {
+        margin-top:200px;
     }
     #c2a {
         margin-top:-200px;
     }
 }
 
+@media only screen and (max-width:1000px) {
+    .mainCard {
+        height: 1400px;
+    }
+}
 @media only screen and (max-width:670px) {
     .mainCard {
         height: auto;
@@ -658,6 +672,7 @@ nav > h3 {
   padding: 5px;
   background: #F2F7F8;
   padding-left:35px;
+  margin-bottom:20px !important;
   
 }
 
@@ -814,7 +829,7 @@ nav > h3 {
 }
 @media only screen and (max-width:600px) {
     .title-text {
-        margin-left:180px;
+        margin-left:200px;
     }
 }
 @media only screen and (max-width:445px) {
