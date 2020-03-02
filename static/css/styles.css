@@ -361,12 +361,12 @@ nav > h3 {
           animation-delay: 0s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-    height:770px;
+    height:490px;
 }
 
 @media only screen and (max-width: 1450px) {
     .mainCard {
-        height: 1000px;
+        height: 500px;
     }
 }
 
@@ -393,12 +393,12 @@ nav > h3 {
 }
 @media only screen and (max-width:1110px) {
     .mainCard {
-        height: 1150px;
+        height: 550px;
     }
 }
 @media only screen and (max-width: 900px) {
     .mainCard {
-        height: 1500px;
+        height: 500px;
     }
     #intro-text {
         margin-top:200px;
@@ -410,7 +410,7 @@ nav > h3 {
 
 @media only screen and (max-width:1000px) {
     .mainCard {
-        height: 1400px;
+        height: 750px;
     }
 }
 @media only screen and (max-width:670px) {
