@@ -476,7 +476,9 @@ nav > h3 {
   display: inline-block;
   padding: 5px;
   margin: 0 20px 20px 0;
-  background: url(/static/img/profile.png);
+  background: url(/static/img/profile.jpg);
+  background-position: center;
+  background-size: cover;
   height: 225px;
   width: 225px;
   border-radius: 5px;
