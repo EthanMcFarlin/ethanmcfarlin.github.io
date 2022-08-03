@@ -46,7 +46,7 @@ body {
 
 .bio-paragraph {
     font-family: Lato;
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 300;
 }
 
@@ -100,12 +100,12 @@ a, a:hover, a:focus, a:active {
 }
 
 ul {
-    padding-left: 70px;
+    padding-left: 35px;
 }
 
 li {
     font-family: Lato;
-    font-size: 20pt;
+    font-size: 12pt;
     font-weight: 300;
 }
 
@@ -123,5 +123,5 @@ li {
     .button-container {
         margin-bottom: 20px;
     }
-    
+
 }
