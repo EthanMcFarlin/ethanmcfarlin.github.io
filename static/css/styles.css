@@ -22,6 +22,7 @@ body {
     padding-left: 100px;
     padding-right: 50px;
     padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .portrait-photo {
@@ -122,8 +123,5 @@ li {
     .button-container {
         margin-bottom: 20px;
     }
-
-    .info-container {
-        margin-bottom: 50px;
-    }
+    
 }
