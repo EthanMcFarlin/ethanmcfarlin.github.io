@@ -19,10 +19,13 @@ body {
     margin-top: 50px;
     box-shadow: 0 10px 40px 0 rgb(12 68 25 / 10%);
     border-radius: 15px;
+    /*border-bottom-left-radius: 15px;*/
+    /*border-bottom-right-radius: 15px;*/
     padding-left: 100px;
     padding-right: 50px;
     padding-bottom: 50px;
     margin-bottom: 50px;
+    border-top: 15px solid #8A0EFF;
 }
 
 .portrait-photo {
@@ -100,8 +103,13 @@ a, a:hover, a:focus, a:active {
 }
 
 ul {
-    padding-left: 35px;
+    /* padding-left: 35px; */
+    /*padding-left: -35px;*/
+    padding-left: 15px;
+    /*list-style-type: none;*/
+    padding-bottom:10px;
 }
+
 
 li {
     font-family: Lato;
