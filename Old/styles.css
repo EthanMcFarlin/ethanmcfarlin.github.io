@@ -1,0 +1,135 @@
+/*------------------------------
+ Body & Universal Elements
+------------------------------ */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	color: #333;
+	font-size: 16px;
+    /*background: url(/static/img/trame-bg.png) repeat;*/
+    background: #F4F7F9;
+    overflow-x: hidden;
+}
+
+.info-container {
+    margin: 0 auto;
+    width: 83%;
+    background: #fff;
+    margin-top: 50px;
+    box-shadow: 0 10px 40px 0 rgb(12 68 25 / 10%);
+    border-radius: 15px;
+    /*border-bottom-left-radius: 15px;*/
+    /*border-bottom-right-radius: 15px;*/
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-top: 15px solid #8A0EFF;
+}
+
+.portrait-photo {
+    /*height: 550px;*/
+    /*width: auto;*/
+    height: auto;
+    width: 80%;
+    border-radius:10px;
+    box-shadow: 0 10px 40px 0 rgb(12 68 25 / 10%);
+}
+
+.bio-header, .bio-sub-header {
+    font-family: Montserrat;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.bio-header {
+    font-weight: 700;
+}
+
+.bio-paragraph {
+    font-family: Lato;
+    font-size: 13pt;
+    font-weight: 300;
+}
+
+.more-emphasis
+{
+    text-decoration: underline !important;
+    text-underline-offset: 4px !important;
+    text-decoration-color: #8A0EFF !important;
+    transition: opacity 100ms ease;
+
+}
+
+.more-emphasis:hover {
+    opacity: 0.6;
+    cursor: pointer;
+
+}
+
+.right-column {
+    padding-right: 50px;
+}
+
+button {
+    border: none;
+    background: #F4F7F9;
+    padding: 13px;
+    font-size: 10pt;
+    font-family: Montserrat;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.button-container {
+    margin-bottom: 30px;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.selected {
+  background: #8a0dff;color: white;
+}
+
+.selectedDiv {
+    display: block !important;
+}
+
+.interchangeable {
+    display: none;
+}
+
+ul {
+    /* padding-left: 35px; */
+    /*padding-left: -35px;*/
+    padding-left: 15px;
+    /*list-style-type: none;*/
+    padding-bottom:2px;
+}
+
+
+li {
+    font-family: Lato;
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.secondary-paragraph {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1257px) {
+    button {
+        margin-bottom: 15px;
+        width: 100px;
+
+    }
+
+    .button-container {
+        margin-bottom: 20px;
+    }
+
+}

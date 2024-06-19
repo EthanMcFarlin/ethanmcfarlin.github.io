@@ -33,161 +33,87 @@
 
     <body>
 
-    <div class="info-container">
+<!--    <nav>-->
+<!--        <a href="/html/">HTML</a> |-->
+<!--        <a href="/css/">CSS</a> |-->
+<!--        <a href="/js/">JavaScript</a> |-->
+<!--        <a href="/python/">Python</a>-->
+<!--    </nav>-->
 
-        <div class="row col-12">
-                <img src="static/img/titleText_2.jpg" style="width: 450px;height: auto;margin: 0 auto;">
-            </div>
-            <div class="row">
-                <div class="col-4 align-items-center left-column">
-                    <img src="static/img/portrait.jpg" class="portrait-photo">
-                </div>
-                <div class="col-8 right-column">
-                    <div class="flex-row button-container">
-                        <button id="button-overview" onclick="swapContent('overview')" class="selected d-inline">Overview</button>
-                        <!--<button id="button-education" onclick="swapContent('education')" class="d-inline">Education</button>-->
-                        <!--<button id="button-research" onclick="swapContent('research')" class="d-inline">Research</button>-->
-                        <button id="button-projects" onclick="swapContent('projects')" class="d-inline">Past Work</button>
-                        <button id="button-contact" onclick="swapContent('contact')" class="d-inline">Contact</button>
-
-                    </div>
-
-                    <div class="interchangeable selectedDiv" id="overview">
-                        <p class="bio-paragraph">Hello and welcome to my personal portfolio site!<br><br> My name is Ethan, and I'm an
-                            undergraduate at <a href="https://www.harvard.edu/" target="_blank" ><span class="more-emphasis">Harvard College</span></a> who is working towards a degree in Computer Science. I hope to use my studies
-                            as a platform to pursue the niche of data storytelling / visualization. This summer, I will interning as a
-                            SURF Fellow through <a  href="https://datavis.caltech.edu/" target="_blank"><span class="more-emphasis">Caltech's Data to Discovery Initiative</span></a>. In the past,
-                            I've worked on projects affiliated with research at CU Boulder, Harvard, and NASA.
-                            <br><br>Outside of work, I
-                            enjoy biking and hiking across trails in Boston.
-                        </p>
-                    </div>
-
-                    <div class="interchangeable" id="education">
-                        <p class="bio-paragraph"><a href="https://www.harvard.edu/" target="_blank" ><span class="more-emphasis">Harvard College</span></a>, Bachelor's Degree (A.B.):
-                        <ul>
-                            <li>Enrollment Dates: August 2020 to May 2024</li>
-                            <li>Concentration: Computer Science</li>
-                            <li>Secondary Field: Government</li>
-                            <li>Activities: Leverett House, Outing Club, Student Astronomers at Harvard-Radcliffe</li>
-                        </ul>
-                        </p>
-
-                        <p class="bio-paragraph secondary-paragraph"><a href="https://www.harvard.edu/" target="_blank" ><span class="more-emphasis">Thomas B. Doherty High School</span></a>, Diploma:
-                        <ul>
-                            <li>Enrollment Dates: August 2016 to May 2020</li>
-                            <li>Distinctions: National AP Scholar, Valedictorian, Academic Hall of Fame</li>
-                        </ul>
-                        </p>
-
-                    </div>
-
-                    <div class="interchangeable" id="research">
-
-                        <p class="bio-paragraph"><a href="https://uraf.harvard.edu/uraf-opportunities/prise" target="_blank" ><span class="more-emphasis">PRISE Research Fellow</span></a>, Harvard College (Summer 2022):
-                        <ul>
-                            <li>Data visualization, geographic information systems, biostats</li>
-                        </ul>
-                        </p>
-
-                        <p class="bio-paragraph secondary-paragraph"><a href="https://uraf.harvard.edu/uraf-opportunities/pcer" target="_blank" ><span class="more-emphasis">Mindich PCER Fellow</span></a>, Harvard College (Summer 2021):
-                        <ul>
-                            <li>Environmental justice, urban planning, public health</li>
-                        </ul>
-                        </p>
-
-                        <p class="bio-paragraph secondary-paragraph"><a href="https://www.csr.utexas.edu/" target="_blank" ><span class="more-emphasis">NASA SEES Intern</span></a>, UT Center for Space Research (Summer 2019):
-                        <ul>
-                            <li>Data science, satelite imagery, emergency preparedness</li>
-                        </ul>
-                        </p>
-
-                    </div>
-
-                    <div class="interchangeable" id="projects">
-                        <ul>
-                            <li>
-                            <p class="bio-paragraph"><a href="https://datavis.caltech.edu/" target="_blank" ><span class="more-emphasis">Data to Discovery Initiative at Caltech/JPL</span></a>, Incoming SURF Fellow (Summer 2023)
-                            </p>
-                            </li>
-                        </ul>
-
-                        <ul>
-                            <li>
-                                <p class="bio-paragraph"><a href="https://www.hsph.harvard.edu/nsaph/" target="_blank" ><span class="more-emphasis">National Studies on Air Pollution and Health at Harvard T.H. Chan</span></a>, PRISE Fellow (Summer 2022)
-                                </p>
-                            </li>
-                        </ul>
-
-                        <ul>
-                            <li>
-                                <p class="bio-paragraph"><a href="https://www.interboropartners.com/" target="_blank" ><span class="more-emphasis">Interboro Partners</span></a>, Mindich PCER Fellow (Summer 2021)
-                                </p>
-                            </li>
-                        </ul>
-
-                        <ul>
-                            <li>
-                                <p class="bio-paragraph"><a href="https://devpost.com/software/covid-19-medical-justice" target="_blank" ><span class="more-emphasis">AWS Data Exchange Hackathon</span></a>, COVID Health Vulnerability Mapper Developer (Summer 2020)
-                                </p>
-                            </li>
-                        </ul>
-
-                        <ul>
-                            <li>
-                                <p class="bio-paragraph"><a href="https://www.linkedin.com/company/braxton-technologies/" target="_blank" ><span class="more-emphasis">Braxton Technologies (now Parsons)</span></a>, Software Engineering Intern (Summer 2019)
-                                </p>
-                            </li>
-                        </ul>
+    <div class="row">
+        <div class="col-1 spacer">
 
 
-                    </div>
+        </div>
 
-                    <div class="interchangeable" id="contact">
+        <div class="col-3 portrait">
 
-                        <p class="bio-paragraph">Email: emcfarlin@college.harvard.edu
-                        </p>
+            <img src="static/img/flowers_minified.jpg" width="100%" height="auto">
 
-                        <p class="bio-paragraph secondary-paragraph"><a href="https://www.linkedin.com/in/ethan-mcfarlin/" target="_blank" ><span class="more-emphasis">LinkedIn</span></a>: /in/ethan-mcfarlin
+            <br><br><br>
 
-                        </p>
+            <h3 class="contact">Contact</h3>
+
+            <h5 class="email"> Email: <span>ethanmcfarlin@gmail.com</span> </h5>
+
+        </div>
+
+        <div class="col-6 about">
+
+            <img src="static/img/flowers_minified.jpg" width="100%" height="auto" class="backup">
+
+            <h3>About</h3>
+
+            <h5> My name is <span>Ethan McFarlin</span>, and welcome to my personal portfolio site! </h5>
+
+            <h5> I'm a recent Computer Science graduate from <span>Harvard College</span> who is passionate about the fields of
+                data science, visualization, web engineering, and product management! </h5>
+
+            <h5> I am currently based out of <span>Boston, Massachusetts</span>, but was born and raised in Colorado Springs, Colorado. </h5>
+
+            <br>
+
+            <h3>Education</h3>
+
+            <h5> B.A. Computer Science, Harvard College
+            </h5>
+
+            <br>
+
+            <h3>Experience</h3>
+
+            <h5> Caltech Data to Discovery Group, Harvard T.H. Chan School of Public Health, TUMO Center for Creative
+                Technologies, UT Center for Space Research, Interboro Partners, Braxton Science and Technology Group
+            </h5>
+
+            <br>
+
+            <h3>Honors</h3>
+
+            <h4> Harvard Conflux Art Tech Residency (2024) </h4>
+            <h4> DAAD German Exchange Master's Degree Scholarship (2024) </h4>
+            <h4> Caltech SURF Fellowship (2023) </h4>
+            <h4> Harvard PRISE Fellowship (2022) </h4>
+            <h4> Harvard Mindich PCER Fellowship (2021) </h4>
+            <h4> Silicon Flatirons Startup Summer Pitch Competition Winner (2021) </h4>
+            <h4> AWS Data Exchange Hackathon Winner (2020) </h4>
+            <h4> Boettcher Foundation Scholarship (2020) </h4>
+
+            <h3 class="contact-2">Contact</h3>
+
+            <h5 class="email-2"> Email: <span>ethanmcfarlin@gmail.com</span> </h5>
 
 
-                    </div>
 
-                </div>
-            </div>
+
+
+        </div>
+
+        <div class="col-2">
+
+        </div>
 
     </div>
-
-    <script>
-
-        function swapContent (sectionTitle) {
-
-
-            let former_div_array = document.getElementsByClassName("selectedDiv");
-            let former_div = former_div_array[0];
-
-            former_div.classList.remove("selectedDiv");
-
-            let former_button_array = document.getElementsByClassName("selected");
-            let former_button = former_button_array[0];
-
-            former_button.classList.remove("selected");
-
-            let divSelection = document.getElementById("" + sectionTitle + "");
-
-            let buttonSelection = document.getElementById("button-" + sectionTitle + "");
-
-            buttonSelection.classList.add("selected");
-            divSelection.classList.add("selectedDiv");
-
-        }
-
-    </script>
-
-    <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     </body>
 
