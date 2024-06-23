@@ -52,7 +52,7 @@ h4 {
 
 
 span {
-    color: #8a0dff;
+    color: #b176e8;
 }
 
 .backup {
@@ -109,7 +109,7 @@ nav {
 
 .link > a:hover {
     transition: 0.05s all ease;
-    color: #8a0dff;
+    color: #b176e8;
 }
 
 .emphasis {
@@ -118,7 +118,7 @@ nav {
 }
 .projects {
     padding-left: 8%;
-    padding-right: 12%;
+    padding-right: 8%;
 }
 
 .rectangle {
