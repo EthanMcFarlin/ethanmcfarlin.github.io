@@ -4,6 +4,9 @@
 
 body {
     background: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the section horizontally */
 }
 
 #introContainer {
@@ -306,4 +309,135 @@ body {
 #linkHolder > div > a:hover {
     transition: 0.3s;
     opacity: 0.7;
+}
+
+.sectionHeader {
+    width: 40vw; /* Set width to approximately 40% of the viewport width */
+    display: flex;
+    flex-direction: column; /* Ensure the elements inside are stacked vertically */
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add this to contain the absolute positioning of the brackets */
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+
+.sectionTextHolder {
+    text-align: center;
+}
+
+/* CSS for the Font Awesome Brackets */
+.section-bracket-icon {
+    position: absolute;
+    color: #992EFB; /* Adjust the icon color as needed */
+    font-size: 12px; /* Adjust the size of the icons if required */
+}
+
+.section-top-left {
+    top: 5px;
+    left: 5px;
+    transform: rotate(45deg); /* Same as #midRight top-left */
+}
+
+.section-top-right {
+    top: 5px;
+    right: 5px;
+    transform: rotate(315deg); /* Same as #midRight top-right */
+}
+
+.section-bottom-left {
+    bottom: 5px;
+    left: 5px;
+    transform: rotate(-45deg); /* Same as #midRight bottom-left */
+}
+
+.section-bottom-right {
+    bottom: 5px;
+    right: 5px;
+    transform: rotate(-315deg); /* Same as #midRight bottom-right */
+}
+
+.sectionTextHolder {
+    text-align: center;
+}
+
+.sectionSubtitle {
+    color: #8A8A8A;
+    font-family: "Inter";
+    margin-bottom: 5px;
+}
+
+.sectionTitle {
+    font-size: 26px;
+    font-family: "Inter";
+    margin-bottom: 8px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.sectionButton {
+    background: #F5F5F5; /* Adjust button background color as needed */
+    /*background: rgba(245, 40, 145, 0);*/
+    /*outline: 1px solid #777777;*/
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px; /* Spacing between buttons */
+    font-weight: 500;
+    color: #2C2C2C;
+}
+
+.sectionButton:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+    /*outline: 1px solid #c9c9c9;*/
+
+}
+
+.sectionButton:active {
+    transform: scale(0.96);
+    transition: 0.3s;
+    outline: 1px solid #70ff88;
+
+}
+
+/* CSS for the Font Awesome Brackets */
+.section-bracket-icon {
+    position: absolute;
+    color: #992EFB; /* Adjust the icon color as needed */
+    font-size: 12px; /* Adjust the size of the icons if required */
+}
+
+.section-top-left {
+    top: 5px;
+    left: 5px;
+    transform: rotate(45deg); /* Same as #midRight top-left */
+}
+
+.section-top-right {
+    top: 5px;
+    right: 5px;
+    transform: rotate(315deg); /* Same as #midRight top-right */
+}
+
+.section-bottom-left {
+    bottom: 5px;
+    left: 5px;
+    transform: rotate(-45deg); /* Same as #midRight bottom-left */
+}
+
+.section-bottom-right {
+    bottom: 5px;
+    right: 5px;
+    transform: rotate(-315deg); /* Same as #midRight bottom-right */
 }

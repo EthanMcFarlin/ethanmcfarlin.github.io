@@ -5,7 +5,7 @@ const phrases = [
     "machine learning", "app design", "data science", "data engineering",
     "data analytics", "statistical analysis", "scientific research", "computer science education",
     "teaching", "edtech", "urban planning", "UX design", "web development",
-    "human-computer interaction", "science communication"
+    "human-computer interaction", "science communication", "public policy"
 ];
 let xPos = 0; // Initial x position of the text
 const speed = 1; // Speed at which the text moves to the right
