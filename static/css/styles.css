@@ -1,174 +1,309 @@
-/*------------------------------
- Body & Universal Elements
------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
 
 body {
-	color: #333;
-	font-size: 16px;
-    /*background: url(/static/img/trame-bg.png) repeat;*/
-    /*background: #F4F7F9;*/
-    background: #ffffff;
-    overflow-x: hidden;
-    /*padding-top: 100px;*/
-    margin-bottom: 100px;
-    /*border-top: 25px solid #F4F7F9;*/
+    background: #E0E0E0;
 }
 
-h3 {
-    font-family: Epilogue;
-    font-weight: 700;
+#introContainer {
+    background: #131313;
+    width: 97vw;
+    height: 96vh;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+    border-radius: 25px;
 }
 
-h5 {
-    font-family: Epilogue;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 1.3em;
-    margin-bottom: 20px;
-    text-wrap: wrap;
+#introContainer {
+    background: #131313;
+    width: 97vw;
+    height: 96vh;
+    margin: 1.5vh 1vw;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-2, .email-2 {
-    display: none;
+#topSlice {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #777777;
+    position: relative;
 }
 
-.contact-2 {
-    margin-top: 50px;
+#middleSlice {
+    border-bottom: 1px solid #777777;
+    /*flex-grow: 1; !* This will make the middle slice flexible, occupying additional space if necessary *!*/
 }
 
-h4 {
-    font-family: Epilogue;
-    font-weight: 400;
-    line-height: 1.3;
-    font-size: 1.3em;
+/*#bottomSlice {*/
+/*    flex-grow: 1; !* This will make the bottom slice fill the remaining space *!*/
+/*    !*background: #333; !* Example background color *!*!*/
+/*    border-bottom-left-radius: inherit;*/
+/*    border-bottom-right-radius: inherit;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    color: white;*/
+/*    font-family: "Inter";*/
+/*}*/
+#bottomSlice {
+    flex-grow: 1; /* This will make the bottom slice fill the remaining space */
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Inter";
+    height: 10vh; /* Adjust this value to fit your design */
+    overflow: hidden; /* Ensure anything overflowing gets hidden */
+}
+/* Center titleText in the middle horizontally with absolute positioning */
+.titleText {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 1.6em;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
 }
 
-.portrait {
-    margin-right: 5vw;
+/* Adjust spacing and flex properties for children */
+#logo1 {
+    /* Apply the same gradient as #actionButton */
+    background: linear-gradient(45deg, #6a0dad, #9b30ff, #3498db, #1e90ff);
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    border-radius: 50%; /* Make it a circle */
 }
 
-
-span {
-    color: #b176e8;
+#linkHolder {
+    margin-left: auto;
+    display: flex;
+    padding-right: 20px;
 }
 
-.backup {
-    display: none;
+#linkHolder div {
+    display: inline-block;
+    margin-left: 20px; /* Add some space between links */
 }
 
-@media screen and (max-width: 1250px) {
-    .email, .contact {
-        display: none;
-    }
-    .col-3 {
-        display: none;
-    }
-
-    .col-6 {
-        width: 80%;
-    }
-
-    .backup {
-        display: inline;
-        width: 40%;
-        margin-bottom:50px;
-    }
-
-    body {
-        padding-top: 50px;
-    }
-
-    .contact-2, .email-2 {
-        display: block;
-    }
-}
-
-nav {
-    padding-bottom: 75px;
-    padding-top: 35px;
-    /*padding-left: 8.4%;*/
-    padding-left: 2%;
-}
-
-.link {
-    padding-right: 8%;
-    display: inline;
-    padding-left: 5%;
-}
-
-.link > a {
+#linkHolder a {
+    color: #fff;
     text-decoration: none;
-    font-family: Epilogue;
-    color: #A6A6A6;
-    font-size: 1.3em;
+    padding: 10px;
+    font-family: "Inter";
 
 }
 
-.link > a:hover {
-    transition: 0.05s all ease;
-    color: #b176e8;
+#bioIntro {
+    font-family: "Inter";
+    font-weight: 300;
+    color: #fff;
+    transition: 0.3s;
+
 }
 
-.emphasis {
-    font-weight: 700;
-    color: #262626 !important;
-}
-.projects {
-    padding-left: 8%;
-    padding-right: 8%;
+#bioIntro:hover {
+    transition: 0.3s;
+    transform: skew(1deg, -0.8deg); /* Skew the text on hover. */
+
 }
 
-.rectangle {
-    width: 100%;
-    height: 50px;
+
+/*#middleSlice {*/
+/*    border-bottom: 1px solid #777777;*/
+/*}*/
+
+.bioBody {
+    font-family: "Inter";
+    /*color: #fff;*/
+    font-size: 16px;
+    font-weight: 300;
+    color: #f5f5f5;
 }
 
-.project-header {
-    font-family: Epilogue;
-    color: #262626;
-    font-size: 1.3em;
-    padding-top: 10px;
+.bioBody > span {
+    border-bottom: 1px solid white;
     font-weight: 500;
-    line-height: 1em;
-    margin-bottom: 0.2em;
+    color: #fff;
+    transition: 0.3s;
+
 }
 
-.project-description {
-    font-family: Epilogue;
-    color: #A6A6A6;
-    font-size: 1.0em;
+.bioBody > span:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    /*border-bottom: 1px dashed white;*/
+
 }
 
-.project-preview {
-    box-shadow: 0 0 35px rgb(90 86 130 / 10%);
-    transition: 0.15s all ease;
-    margin-bottom:15px;
-    width: 100%;
-    height:auto;
+#midLeft {
+    border-right: 1px solid #777777;
+    padding: 50px;
+}
+
+#bioBodyContainer {
+    margin-top: 30px;
+}
+
+#actionButton > i {
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+
+
+#actionButton:hover > i {
+    transform:translateX(5px);
+
+}
+
+#actionButton {
+    /*background: linear-gradient(90deg, #3957F1, #6ba1e3,#B076E7,#e2c5fc);*/
+    /*background: linear-gradient(90deg, #db6071, #e32b44, #cc218a, #d63eba);*/
+
+    background: linear-gradient(90deg, #6a0dad, #9b30ff, #3498db, #1e90ff);
+
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
     cursor: pointer;
-}
+    transition: 0.3s;
+    font-weight: 500;
+    margin-top: 15px;
 
-.project-preview:hover {
-    box-shadow: 0 0 45px rgb(90 86 130 / 18%);
-}
-
-.projects > .row {
-    margin-bottom: 35px;
-}
-
-@media screen and (max-width: 865px) {
-    .link {
-        padding-right: 4%;
-        padding-left: 3%;
-    }
 
 }
 
-@media screen and (max-width: 580px) {
-    #connect {
+#actionButton:hover {
+    filter: brightness(1.15);
+    transition: 0.3s;
+}
+
+#actionButton:active {
+    filter: brightness(0.85);
+    transform: scale(0.96);
+    transition: 0.3s;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-7, .col-5 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.image-container {
+    height: 70%;
+    perspective: 600px;
+
+}
+
+.image {
+    width: auto;
+    height: 100%;
+
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 30px rgba(155, 48, 255, 0.05),
+    0 0 45px rgba(52, 152, 219, 0.05);
+
+
+    /*transition: transform 0.1s ease;*/
+    /*transform-style: preserve-3d;*/
+
+    /*box-shadow:*/
+    /*        0 0 30px rgba(155, 48, 255, 0.02),*/
+    /*        0 0 45px rgba(52, 152, 219, 0.02)*/
+}
+
+#midRight canvas {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: block;
+}
+
+#midRight {
+    position: relative; /* This ensures the absolute positioning of child elements is relative to this container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/background-dots.png") !important;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 700px) {
+    #midRight {
         display: none;
     }
+
+    #midLeft {
+        width: 100vw;
+    }
+
+    #linkHolder {
+        display: none;
+    }
+}
+
+.bracket-icon {
+    position: absolute;
+    color: #fff; /* Adjust the icon color as needed */
+    font-size: 24px; /* Adjust the size of the icons */
+}
+.bracket-icon {
+    position: absolute;
+    color: #777777; /* Adjust the icon color as needed */
+    font-size: 12px; /* Adjust the size of the icons if required */
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+    transform: rotate(45deg);
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+    transform: rotate(315deg);
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(-315deg);
+}
+
+#linkHolder > div > a {
+    transition: 0.3s;
+}
+
+#linkHolder > div > a:hover {
+    transition: 0.3s;
+    opacity: 0.7;
 }
