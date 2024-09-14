@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { date: 'June 2022', description: "Began internship with the Harvard Data Science Initiative through a PRISE Fellowship", label: 'research' },
         { date: 'May 2022', description: "Attended EAGxPrague in Prague, Czechia", label: 'award' },
         { date: 'Feb 2022', description: "Conducted research-for-credit with the Harvard Government Department", label: 'research' },
-        { date: 'Jan 2022', description: "Taught a data science workshop at the TUMO Center in Yerevan, Armenia", label: 'award' },
+        { date: 'Jan 2022', description: "Taught a data science workshop at the TUMO Center in Yerevan, Armenia", label: 'milestone' },
         { date: 'July 2021', description: "Won Startup Summer Pitch Contest at the CU Boulder Silicon Flatirons Institute", label: 'award' },
         { date: 'June 2021', description: "Began internship with Interboro Partners through a Harvard Mindich PCER Fellowship", label: 'research' },
         { date: 'Oct 2020', description: "Won 'Best in Healthcare' and 'Best Data Viz' at Amazon AWS Data Exchange Hackathon", label: 'award' },

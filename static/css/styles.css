@@ -428,7 +428,21 @@ body {
 .sectionButton:hover {
     /*opacity: 0.7;*/
     transition: 0.3s;
-    filter: brightness(1.05)drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.05));
+    filter: brightness(1.1)drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.05));
+
+    /*transform: scale(1.02);*/
+    /*outline: 1px solid #c9c9c9;*/
+
+}
+
+.sectionButton > i {
+    transition: 0.3s;
+}
+
+.sectionButton:hover > i {
+    /*opacity: 0.7;*/
+    transform: translateY(-2px);
+    transition: 0.3s;
 
     /*transform: scale(1.02);*/
     /*outline: 1px solid #c9c9c9;*/
