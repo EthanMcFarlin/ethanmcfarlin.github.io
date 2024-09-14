@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { date: 'Sep 2024', description: "Continued BKC project as a Research Assistant at the University of Virginia ", label: 'research' },
         { date: 'Aug 2024', description: "Returned as a 3x Teaching Assistant for Harvard COMPSCI 171 'Visualization' ", label: 'milestone' },
         { date: 'Aug 2024', description: "Started a new position as Faculty Dean Aide of Leverett House at Harvard", label: 'milestone' },
-        { date: 'June 2024', description: 'Led CSCI P-14115 "Introduction to Data Science" at Harvard Summer School', label: 'milestone' },
+        { date: 'June 2024', description: 'Taught CSCI P-14115 "Introduction to Data Science" at Harvard Summer School', label: 'milestone' },
         { date: 'May 2024', description: "Graduated from Harvard College with a Bachelor's in Computer Science", label: 'milestone' },
         { date: 'April 2024', description: "Awarded a fully-funded German DAAD Master's Degree Scholarship (turned down) ", label: 'award' },
         { date: 'Feb 2024', description: 'Began working with the Harvard Berkman Klein Center as a Research Assistant', label: 'research' },
