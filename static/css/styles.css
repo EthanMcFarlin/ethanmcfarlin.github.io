@@ -312,7 +312,7 @@ body {
 }
 
 .sectionHeader {
-    width: 40vw; /* Set width to approximately 40% of the viewport width */
+    width: 60vw; /* Set width to approximately 40% of the viewport width */
     display: flex;
     flex-direction: column; /* Ensure the elements inside are stacked vertically */
     justify-content: center;
@@ -320,7 +320,7 @@ body {
     position: relative; /* Add this to contain the absolute positioning of the brackets */
     margin-top: 40px;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -367,10 +367,11 @@ body {
     color: #8A8A8A;
     font-family: "Inter";
     margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .sectionTitle {
-    font-size: 26px;
+    font-size: 30px;
     font-family: "Inter";
     margin-bottom: 8px;
 }
@@ -382,7 +383,13 @@ body {
 }
 
 .sectionButton {
-    background: #F5F5F5; /* Adjust button background color as needed */
+    background: hsla(0, 0%, 100%, .66);
+    border-color: rgba(0, 0, 0, .1);
+    border-width: 1px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+
     /*background: rgba(245, 40, 145, 0);*/
     /*outline: 1px solid #777777;*/
     border: none;
@@ -398,8 +405,11 @@ body {
 }
 
 .sectionButton:hover {
-    opacity: 0.5;
+    /*opacity: 0.7;*/
     transition: 0.3s;
+    filter: brightness(1.05)drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.05));
+
+    /*transform: scale(1.02);*/
     /*outline: 1px solid #c9c9c9;*/
 
 }
@@ -441,3 +451,162 @@ body {
     right: 5px;
     transform: rotate(-315deg); /* Same as #midRight bottom-right */
 }
+
+.buttonContainer > button > i {
+    margin-right: 10px;
+}
+
+.glossyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    /*height: 600px;*/
+    background: linear-gradient(to bottom, rgba(237, 237, 237, 1) 40%, rgba(237, 237, 237, 0) 100%);
+    border-width: 1px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.entries {
+    width: 100%; /* Ensure entries take full width */
+    max-width: 90%; /* Constrain the maximum width as needed */
+    margin: 20px 0; /* Provide some spacing around the entries */
+    padding: 0 20px; /* Add some padding to the sides */
+}
+
+@media only screen and (max-width: 1050px) {
+    .entries {
+        max-width: 700px;
+    }
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center align */
+    width: 100%; /* Ensure entry takes full width of entries container */
+    font-family: "Inter";
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.description {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center description content */
+    position: relative;
+    font-size: 15px;
+}
+
+.date {
+    flex: 1;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the pagination controls */
+    margin-top: 10px; /* Adjust the positioning of the pagination */
+}
+
+.pagination button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjust the font size to make it more subtle */
+    margin: 0 5px; /* Space between buttons */
+    color: #333; /* Button color */
+    padding: 5px 10px; /* Add padding for better clickability */
+    transition: transform 0.2s;
+}
+
+.pagination button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover for feedback */
+}
+
+.pagination button:disabled {
+    color: #ccc; /* Grey out the button when disabled */
+    cursor: not-allowed;
+}
+
+.pagination #pageCounter {
+    font-weight: 300;
+    color: #333;
+}
+
+.label {
+    /*font-size: 0.8em;*/
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-weight: 500;
+    display: inline-flex; /* Keep the label compact */
+    align-items: center;
+    margin-top: 8px; /* Add margin to separate label from text */
+    max-width: fit-content; /* Ensure the label is only as wide as its content */
+    font-size: 10px;
+    text-transform: uppercase;
+
+
+}
+
+.label i {
+    margin-right: 10px;
+    font-size: 10px;
+
+
+}
+.label.research {
+    background-color: hsla(0, 0%, 100%, .66);
+    color: #f25295; /* Same color as icon in buttonContainer */
+}
+
+/* Styles for award label */
+.label.award {
+    background-color: hsla(0, 0%, 100%, .66);
+    color: #e64f29; /* Same color as icon in buttonContainer */
+}
+
+/* Styles for milestone label */
+.label.milestone {
+    background-color: hsla(0, 0%, 100%, .66);
+    color: #10ad89; /* Same color as icon in buttonContainer */
+}
+
+#researchButton > i {
+    color: #f25295;
+}
+
+#awardsButton > i {
+    color: #e64f29;
+}
+
+#milestonesButton > i {
+    color: #10ad89;
+}
+
+
+/*.entries {*/
+/*    padding-left: 20px;*/
+/*    padding-right: 20px;*/
+/*}*/

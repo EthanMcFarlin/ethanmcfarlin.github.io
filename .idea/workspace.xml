@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6d27823-38b4-4551-a889-32be745b13c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/js/pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old 2/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old 2/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old 2/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/browserconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old 2/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old 2/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old 2/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old 2/mstile-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/mstile-150x150.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +64,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Old 2" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/static" />
@@ -91,6 +100,9 @@
       <workItem from="1722287173736" duration="786000" />
       <workItem from="1726199543232" duration="15580000" />
       <workItem from="1726229701984" duration="4729000" />
+      <workItem from="1726260857187" duration="472000" />
+      <workItem from="1726276894484" duration="353000" />
+      <workItem from="1726277494692" duration="11255000" />
     </task>
     <servers />
   </component>
