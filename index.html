@@ -163,6 +163,23 @@
 
     <script>
 
+        document.addEventListener('DOMContentLoaded', function () {
+            const actionButton = document.getElementById('actionButton');
+            const recentUpdatesHeader = document.getElementById('recentUpdatesHeader');
+            const recentUpdates = document.getElementById('recentUpdates');
+
+            actionButton.addEventListener('click', function () {
+                const headerRect = recentUpdatesHeader.getBoundingClientRect();
+                const updatesRect = recentUpdates.getBoundingClientRect();
+                const offset = (updatesRect.top + headerRect.bottom) / 2;
+
+                window.scrollTo({
+                    top: window.scrollY + offset - (window.innerHeight / 2),
+                    behavior: 'smooth'
+                });
+            });
+        });
+
         const imagePaths = [
             { path: 'static/img/flowers_wide.jpg', probability: 60 },
             { path: 'static/img/winter.jpg', probability: 15 },
