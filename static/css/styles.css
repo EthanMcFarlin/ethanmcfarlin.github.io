@@ -1,3 +1,11 @@
+/*
+
+   ===================
+   General Styles
+   ===================
+
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -9,14 +17,13 @@ body {
     align-items: center; /* Centers the section horizontally */
 }
 
-#introContainer {
-    background: #131313;
-    width: 97vw;
-    height: 96vh;
-    margin-top: 1.5vh;
-    margin-left: 1vw;
-    border-radius: 25px;
-}
+/*
+
+   ===================
+   Home Hero
+   ===================
+
+*/
 
 #introContainer {
     background: #131313;
@@ -36,35 +43,6 @@ body {
     position: relative;
 }
 
-#middleSlice {
-    border-bottom: 1px solid #777777;
-    /*flex-grow: 1; !* This will make the middle slice flexible, occupying additional space if necessary *!*/
-}
-
-/*#bottomSlice {*/
-/*    flex-grow: 1; !* This will make the bottom slice fill the remaining space *!*/
-/*    !*background: #333; !* Example background color *!*!*/
-/*    border-bottom-left-radius: inherit;*/
-/*    border-bottom-right-radius: inherit;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    color: white;*/
-/*    font-family: "Inter";*/
-/*}*/
-#bottomSlice {
-    flex-grow: 1; /* This will make the bottom slice fill the remaining space */
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: "Inter";
-    height: 10vh; /* Adjust this value to fit your design */
-    overflow: hidden; /* Ensure anything overflowing gets hidden */
-}
-/* Center titleText in the middle horizontally with absolute positioning */
 .titleText {
     font-family: "Inter";
     font-weight: 300;
@@ -76,14 +54,12 @@ body {
     margin: 0;
 }
 
-/* Adjust spacing and flex properties for children */
 #logo1 {
-    /* Apply the same gradient as #actionButton */
     background: linear-gradient(45deg, #6a0dad, #9b30ff, #3498db, #1e90ff);
     width: 25px;
     height: 25px;
     margin-left: 20px;
-    border-radius: 50%; /* Make it a circle */
+    border-radius: 50%;
 }
 
 #linkHolder {
@@ -94,7 +70,7 @@ body {
 
 #linkHolder div {
     display: inline-block;
-    margin-left: 20px; /* Add some space between links */
+    margin-left: 20px;
 }
 
 #linkHolder a {
@@ -102,7 +78,19 @@ body {
     text-decoration: none;
     padding: 10px;
     font-family: "Inter";
+}
 
+#linkHolder > div > a {
+    transition: 0.3s;
+}
+
+#linkHolder > div > a:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+#middleSlice {
+    border-bottom: 1px solid #777777;
 }
 
 #bioIntro {
@@ -111,23 +99,15 @@ body {
     color: #fff;
     transition: 0.3s;
     font-size: 43px;
-
 }
 
 #bioIntro:hover {
     transition: 0.3s;
-    transform: skew(1deg, -0.8deg); /* Skew the text on hover. */
-
+    transform: skew(1deg, -0.8deg);
 }
-
-
-/*#middleSlice {*/
-/*    border-bottom: 1px solid #777777;*/
-/*}*/
 
 .bioBody {
     font-family: "Inter";
-    /*color: #fff;*/
     font-size: 22px;
     font-weight: 300;
     color: #f5f5f5;
@@ -137,7 +117,6 @@ body {
     font-weight: 500;
     color: #fff;
     transition: 0.3s;
-
 }
 
 .bioBody > a > span {
@@ -145,7 +124,6 @@ body {
     font-weight: 500;
     color: #fff;
     transition: 0.3s;
-
 }
 
 .bioBody > a {
@@ -153,22 +131,16 @@ body {
     color: #fff;
 }
 
-.bioBody > span:hover {
-    opacity: 0.8;
-    transition: 0.3s;
-    /*border-bottom: 1px dashed white;*/
-
-}
-
+.bioBody > span:hover,
 .bioBody > a:hover > span {
     opacity: 0.8;
     transition: 0.3s;
-    color: #4aaff7;
-    border-bottom: 1px solid #4aaff7;
-
-
 }
 
+.bioBody > a:hover > span {
+    color: #4aaff7;
+    border-bottom: 1px solid #4aaff7;
+}
 
 #midLeft {
     border-right: 1px solid #777777;
@@ -187,19 +159,12 @@ body {
     transition: 0.3s;
 }
 
-
-
 #actionButton:hover > i {
-    transform:translateX(5px);
-
+    transform: translateX(5px);
 }
 
 #actionButton {
-    /*background: linear-gradient(90deg, #3957F1, #6ba1e3,#B076E7,#e2c5fc);*/
-    /*background: linear-gradient(90deg, #db6071, #e32b44, #cc218a, #d63eba);*/
-
     background: linear-gradient(90deg, #6a0dad, #9b30ff, #3498db, #1e90ff);
-
     border: none;
     border-radius: 5px;
     color: white;
@@ -209,8 +174,6 @@ body {
     transition: 0.3s;
     font-weight: 500;
     margin-top: 15px;
-
-
 }
 
 #actionButton:hover {
@@ -234,29 +197,17 @@ body {
     padding-right: 0;
 }
 
-
 .image-container {
     height: 70%;
     perspective: 600px;
-
 }
 
 .image {
     width: auto;
     height: 100%;
-
     transition: transform 0.1s ease, box-shadow 0.3s ease;
     transform-style: preserve-3d;
-    box-shadow: 0 0 30px rgba(155, 48, 255, 0.05),
-    0 0 45px rgba(52, 152, 219, 0.05);
-
-
-    /*transition: transform 0.1s ease;*/
-    /*transform-style: preserve-3d;*/
-
-    /*box-shadow:*/
-    /*        0 0 30px rgba(155, 48, 255, 0.02),*/
-    /*        0 0 45px rgba(52, 152, 219, 0.02)*/
+    box-shadow: 0 0 30px rgba(155, 48, 255, 0.05), 0 0 45px rgba(52, 152, 219, 0.05);
 }
 
 #midRight canvas {
@@ -267,7 +218,7 @@ body {
 }
 
 #midRight {
-    position: relative; /* This ensures the absolute positioning of child elements is relative to this container */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,98 +230,71 @@ body {
     background-position: center;
 }
 
-
-
 .bracket-icon {
     position: absolute;
-    color: #fff; /* Adjust the icon color as needed */
-    font-size: 24px; /* Adjust the size of the icons */
-}
-.bracket-icon {
-    position: absolute;
-    color: #777777; /* Adjust the icon color as needed */
-    font-size: 12px; /* Adjust the size of the icons if required */
+    color: #777777;
+    font-size: 12px;
 }
 
-.top-left {
+.bracket-icon.top-left {
     top: 10px;
     left: 10px;
     transform: rotate(45deg);
 }
 
-.top-right {
+.bracket-icon.top-right {
     top: 10px;
     right: 10px;
     transform: rotate(315deg);
 }
 
-.bottom-left {
+.bracket-icon.bottom-left {
     bottom: 10px;
     left: 10px;
     transform: rotate(-45deg);
 }
 
-.bottom-right {
+.bracket-icon.bottom-right {
     bottom: 10px;
     right: 10px;
     transform: rotate(-315deg);
 }
 
-#linkHolder > div > a {
-    transition: 0.3s;
-}
-
-#linkHolder > div > a:hover {
-    transition: 0.3s;
-    opacity: 0.7;
-}
-
-.sectionHeader {
-    width: 60vw; /* Set width to approximately 40% of the viewport width */
+#bottomSlice {
+    flex-grow: 1;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
     display: flex;
-    flex-direction: column; /* Ensure the elements inside are stacked vertically */
     justify-content: center;
     align-items: center;
-    position: relative; /* Add this to contain the absolute positioning of the brackets */
+    color: white;
+    font-family: "Inter";
+    height: 10vh;
+    overflow: hidden;
+}
+
+#projectsNavLink:hover {
+    cursor: pointer;
+}
+
+/*
+
+   ===================
+   Recent Updates
+   ===================
+
+*/
+
+.sectionHeader {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     margin-top: 40px;
     padding: 20px;
     margin-bottom: 20px;
-}
-
-
-.sectionTextHolder {
-    text-align: center;
-}
-
-/* CSS for the Font Awesome Brackets */
-.section-bracket-icon {
-    position: absolute;
-    color: #992EFB; /* Adjust the icon color as needed */
-    font-size: 12px; /* Adjust the size of the icons if required */
-}
-
-.section-top-left {
-    top: 5px;
-    left: 5px;
-    transform: rotate(45deg); /* Same as #midRight top-left */
-}
-
-.section-top-right {
-    top: 5px;
-    right: 5px;
-    transform: rotate(315deg); /* Same as #midRight top-right */
-}
-
-.section-bottom-left {
-    bottom: 5px;
-    left: 5px;
-    transform: rotate(-45deg); /* Same as #midRight bottom-left */
-}
-
-.section-bottom-right {
-    bottom: 5px;
-    right: 5px;
-    transform: rotate(-315deg); /* Same as #midRight bottom-right */
 }
 
 .sectionTextHolder {
@@ -392,8 +316,8 @@ body {
 
 .buttonContainer {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    margin-top: 20px; /* Adjust as needed */
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .sectionButton {
@@ -402,10 +326,6 @@ body {
     border-width: 1px;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-
-
-    /*background: rgba(245, 40, 145, 0);*/
-    /*outline: 1px solid #777777;*/
     border: none;
     border-radius: 20px;
     color: white;
@@ -413,19 +333,14 @@ body {
     font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
-    margin: 0 5px; /* Spacing between buttons */
+    margin: 0 5px;
     font-weight: 500;
     color: #2C2C2C;
 }
 
 .sectionButton:hover {
-    /*opacity: 0.7;*/
     transition: 0.3s;
-    filter: brightness(1.1)drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.05));
-
-    /*transform: scale(1.02);*/
-    /*outline: 1px solid #c9c9c9;*/
-
+    filter: brightness(1.1) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.05));
 }
 
 .sectionButton > i {
@@ -433,51 +348,14 @@ body {
 }
 
 .sectionButton:hover > i {
-    /*opacity: 0.7;*/
     transform: translateY(-2px);
     transition: 0.3s;
-
-    /*transform: scale(1.02);*/
-    /*outline: 1px solid #c9c9c9;*/
-
 }
 
 .sectionButton:active {
     transform: scale(0.96);
     transition: 0.3s;
     outline: 1px solid #70ff88;
-
-}
-
-/* CSS for the Font Awesome Brackets */
-.section-bracket-icon {
-    position: absolute;
-    color: #992EFB; /* Adjust the icon color as needed */
-    font-size: 12px; /* Adjust the size of the icons if required */
-}
-
-.section-top-left {
-    top: 5px;
-    left: 5px;
-    transform: rotate(45deg); /* Same as #midRight top-left */
-}
-
-.section-top-right {
-    top: 5px;
-    right: 5px;
-    transform: rotate(315deg); /* Same as #midRight top-right */
-}
-
-.section-bottom-left {
-    bottom: 5px;
-    left: 5px;
-    transform: rotate(-45deg); /* Same as #midRight bottom-left */
-}
-
-.section-bottom-right {
-    bottom: 5px;
-    right: 5px;
-    transform: rotate(-315deg); /* Same as #midRight bottom-right */
 }
 
 .buttonContainer > button > i {
@@ -488,157 +366,6 @@ body {
     .buttonContainer > button > i {
         margin-right: 0px;
     }
-}
-
-#recentUpdates {
-    width: 80vw;
-    margin-bottom: 20px;
-    background: linear-gradient(to bottom, rgba(237, 237, 237, 1) 40%, rgba(237, 237, 237, 0) 100%);
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-
-}
-
-.glossyContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    /*height: 600px;*/
-    border-width: 1px;
-
-    border-radius: 15px;
-
-}
-
-.entries {
-    /*width: 100%; !* Ensure entries take full width *!*/
-    /*max-width: 95%; !* Constrain the maximum width as needed *!*/
-    margin: 20px 0; /* Provide some spacing around the entries */
-    padding: 0 20px; /* Add some padding to the sides */
-    width: 75%;
-}
-
-@media only screen and (max-width: 1400px) {
-    .entries {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 1050px) {
-    .entries {
-        max-width: 700px;
-    }
-}
-
-.entry {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Vertically center align */
-    width: 100%; /* Ensure entry takes full width of entries container */
-    font-family: "Inter";
-    color: #333;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.description {
-    flex: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center description content */
-    position: relative;
-    font-size: 17px;
-}
-
-.date {
-    flex: 1;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: left;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 0;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 0;
-}
-
-.pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center align the pagination controls */
-    margin-top: 10px; /* Adjust the positioning of the pagination */
-}
-
-.pagination button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 16px; /* Adjust the font size to make it more subtle */
-    margin: 0 5px; /* Space between buttons */
-    color: #333; /* Button color */
-    padding: 5px 10px; /* Add padding for better clickability */
-    transition: transform 0.2s;
-}
-
-.pagination button:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover for feedback */
-}
-
-.pagination button:disabled {
-    color: #ccc; /* Grey out the button when disabled */
-    cursor: not-allowed;
-}
-
-.pagination #pageCounter {
-    font-weight: 300;
-    color: #333;
-}
-
-.label {
-    /*font-size: 0.8em;*/
-    padding: 3px 10px;
-    border-radius: 15px;
-    font-weight: 500;
-    display: inline-flex; /* Keep the label compact */
-    align-items: center;
-    margin-top: 8px; /* Add margin to separate label from text */
-    max-width: fit-content; /* Ensure the label is only as wide as its content */
-    font-size: 12px;
-    text-transform: uppercase;
-
-
-}
-
-.label i {
-    margin-right: 10px;
-    font-size: 10px;
-
-
-}
-.label.research {
-    background-color: hsla(0, 0%, 100%, .66);
-    color: #f25295; /* Same color as icon in buttonContainer */
-}
-
-/* Styles for award label */
-.label.award {
-    background-color: hsla(0, 0%, 100%, .66);
-    color: #e64f29; /* Same color as icon in buttonContainer */
-}
-
-/* Styles for milestone label */
-.label.milestone {
-    background-color: hsla(0, 0%, 100%, .66);
-    color: #10ad89; /* Same color as icon in buttonContainer */
 }
 
 #researchButton > i {
@@ -653,35 +380,133 @@ hr {
     color: #10ad89;
 }
 
+#recentUpdates {
+    width: 80vw;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, rgba(237, 237, 237, 1) 40%, rgba(237, 237, 237, 0) 100%);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
 
-/*.entries {*/
-/*    padding-left: 20px;*/
-/*    padding-right: 20px;*/
-/*}*/
+.glossyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-width: 1px;
+    border-radius: 15px;
+}
 
+.entries {
+    margin: 20px 0;
+    padding: 0 20px;
+    width: 75%;
+}
 
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Inter";
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.description {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-size: 17px;
+}
 
-/*.buttonContainer {*/
-/*    position: relative;*/
-/*}*/
+.date {
+    flex: 1;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+}
 
+.label {
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    max-width: fit-content;
+    font-size: 12px;
+    text-transform: uppercase;
+}
 
+.label i {
+    margin-right: 10px;
+    font-size: 10px;
+}
 
+.label.research {
+    background-color: hsla(0, 0%, 100%, .66);
+    color: #f25295;
+}
 
+.label.award {
+    background-color: hsla(0, 0%, 100%, .66);
+    color: #e64f29;
+}
 
+.label.milestone {
+    background-color: hsla(0, 0%, 100%, .66);
+    color: #10ad89;
+}
 
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
 
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
 
+.pagination button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    color: #333;
+    padding: 5px 10px;
+    transition: transform 0.2s;
+}
 
+.pagination button:hover {
+    transform: scale(1.1);
+}
 
+.pagination button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
 
+.pagination #pageCounter {
+    font-weight: 300;
+    color: #333;
+}
 
+/*
 
+   ===================
+   Projects
+   ===================
 
-
-
-
+*/
 
 .dropdownContainer {
     position: relative;
@@ -691,13 +516,13 @@ hr {
 }
 
 .dropdownButton {
-    appearance: none; /* Remove default appearance */
+    appearance: none;
     background: hsla(0, 0%, 100%, .66);
     border: 1px solid rgba(0, 0, 0, .1);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 30px;
-    padding: 15px 160px 15px 25px; /* Padding to make space for the custom arrow */
+    padding: 15px 160px 15px 25px;
     font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
@@ -740,8 +565,7 @@ hr {
 }
 
 .dropdownContainer:hover > label > div > i  {
-    transform:scale(0.95)translateY(-1px);
-
+    transform: scale(0.95) translateY(-1px);
 }
 
 .projectsGrid {
@@ -760,7 +584,7 @@ hr {
     border-width: 1px;
     border-radius: 15px;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.2s;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -768,20 +592,21 @@ hr {
 }
 
 .grid-item:hover {
+    transition: 0.2s;
     filter: saturate(90%);
     transform: scale(1.02);
 }
 
 .image-wrapper {
     width: 100%;
-    padding-top: 75%; /* 4:3 Aspect Ratio */
+    padding-top: 75%;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 15px;
-    text-align: center; /* Centers the preview image */
-    padding-left: 0; /* Ensure no extra padding */
-    padding-right: 0; /* Ensure no extra padding */
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .preview-image {
@@ -798,9 +623,9 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 3px); /* Ensure full width minus additional padding */
-    padding-left: 3px; /* Add additional 3 pixels of left padding */
-    text-align: left; /* Set text alignment to left */
+    width: calc(100% - 3px);
+    padding-left: 3px;
+    text-align: left;
 }
 
 .project-type {
@@ -811,7 +636,7 @@ hr {
 .keywords {
     text-align: left;
     display: flex;
-    justify-content: flex-start;  /* Align items to the start (left) */
+    justify-content: flex-start;
 }
 
 .keyword {
@@ -820,7 +645,7 @@ hr {
 }
 
 .keyword > span {
-
+    display: inline-block;
 }
 
 .dot {
@@ -834,28 +659,40 @@ hr {
 .project-title {
     margin: 10px 0;
     font-size: 1.2em;
-    text-align: left; /* Set text alignment to left */
-    width: calc(100% - 3px); /* Ensure the content width matches */
-    padding-left: 3px; /* Additional 3 pixels of left padding */
+    text-align: left;
+    width: calc(100% - 3px);
+    padding-left: 3px;
     font-weight: 700;
 }
 
 .project-authors {
     margin-bottom: 10px;
-    text-align: left; /* Set text alignment to left */
-    width: calc(100% - 3px); /* Ensure the content width matches */
-    padding-left: 3px; /* Additional 3 pixels of left padding */
+    text-align: left;
+    width: calc(100% - 3px);
+    padding-left: 3px;
+}
 
+.project-authors > a {
+    border-bottom: 1px solid #c2c2c2;
+    font-weight: 300;
+    transition: 0.2s;
+    text-decoration: none;
+    color: #424649;
+}
 
-
+.project-authors > a:hover {
+    transition: 0.2s;
+    color: #4aaff7 !important;
+    border-bottom: 1px solid #4aaff7;
+    cursor: pointer;
 }
 
 .project-description {
     font-size: 0.9em;
     color: #666;
-    text-align: left; /* Set text alignment to left */
-    width: calc(100% - 3px); /* Ensure the content width matches */
-    padding-left: 3px; /* Additional 3 pixels of left padding */
+    text-align: left;
+    width: calc(100% - 3px);
+    padding-left: 3px;
 }
 
 .project-link {
@@ -866,36 +703,25 @@ hr {
     border-radius: 5px;
     text-decoration: none;
     color: #333;
-    text-align: center; /* Set text alignment to left */
-    width: calc(100% - 3px); /* Ensure the content width matches */
-    padding-left: 3px; /* Additional 3 pixels of left padding */
+    text-align: center;
+    width: calc(100% - 3px);
+    padding-left: 3px;
 }
 
 .project-link:hover {
     background-color: #ccc;
     transition: 0.3s;
-    /*filter: brightness(1.1);*/
 }
 
 .project-link:hover > i {
     transition: 0.3s;
-    transform:translateX(-2px);
+    transform: translateX(-2px);
 }
 
 .project-link i {
     transition: 0.3s;
     margin-right: 5px;
 }
-
-
-#projectsNavLink:hover {
-    cursor: pointer;
-}
-
-
-
-
-
 
 @media only screen and (max-width: 1300px) {
     .keywords {
@@ -939,6 +765,7 @@ hr {
     .entries {
         padding: 0 10px;
     }
+
     .date {
         transform: translateX(-15px);
     }
@@ -949,12 +776,13 @@ hr {
         transform: translateX(0px);
         margin-right: 10px;
         font-size: 15px;
-
     }
+
     .description {
         font-size: 15px;
     }
 }
+
 
 @media only screen and (max-width: 400px) {
     .bioBody {
