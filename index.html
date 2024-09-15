@@ -54,7 +54,7 @@
             <div id="logo1"></div>
             <h1 class="titleText">Ethan McFarlin</h1>
             <nav id="linkHolder">
-                <div><a>Projects</a></div>
+                <div><a id="projectsNavLink">Projects</a></div>
                 <div><a href="https://www.linkedin.com/in/ethan-mcfarlin/" target="_blank">Connect</a></div>
             </nav>
         </div>
@@ -76,17 +76,6 @@
                                 platforms for discovery in science and business.
 
                             </p>
-
-<!--                            <p class="bioBody">-->
-<!--                                I am especially passionate about building open-source platforms,-->
-<!--                                data stories, and web-based visualizations to increase the accessibility-->
-<!--                                of academic research across fields like environmental justice and public health.-->
-<!--                            </p>-->
-
-<!--                            <p class="bioBody">-->
-<!--                                Using creative computational methods, I transform complex datasets into tangible-->
-<!--                                insights and implicit moments of discovery.-->
-<!--                            </p>-->
 
                         </div>
 
@@ -127,8 +116,10 @@
 <!--        <div class="section-bracket-icon section-bottom-right"><i class="fa fa-angle-right"></i></div>-->
 
         <div class="sectionTextHolder">
-            <p class="sectionSubtitle">Updates</p>
-            <h1 class="sectionTitle">Keep up with my most recent work</h1>
+<!--            <p class="sectionSubtitle">Updates</p>-->
+<!--            <h1 class="sectionTitle">Keep up with my most recent work</h1>-->
+                <h1 class="sectionTitle">Recent Updates</h1>
+
         </div>
 
         <div class="buttonContainer">
@@ -161,17 +152,175 @@
         </div>
     </div>
 
+    <div class="sectionHeader" id="projectsHeader">
+
+        <div class="sectionTextHolder">
+<!--            <p class="sectionSubtitle">Projects</p>-->
+            <h1 class="sectionTitle">Projects </h1>
+        </div>
+
+        <div class="dropdownContainer">
+            <label>
+                <select class="dropdownButton">
+                    <option>Grid</option>
+                    <option disabled>Network Graph</option>
+                </select>
+                <div class="customSelectArrow">
+                    <i class="fa fa-angle-down"></i>
+                </div>
+            </label>
+        </div>
+
+    </div>
+
+    <div class="projectsGrid">
+        <div class="glossyContainer grid-item">
+            <div class="image-wrapper">
+                <img src="static/img/project_images/amazon.jpg" alt="Amazon Project Preview" class="preview-image">
+            </div>
+            <div class="project-info">
+                <span class="project-type">Web Development</span>
+                <span class="keywords">
+                    <span class="keyword"><span class="dot" style="background-color: #F72485;"></span>Mapbox</span>
+                    <span class="keyword"><span class="dot" style="background-color: #7209B7;"></span>D3.js</span>
+                </span>
+            </div>
+            <h3 class="project-title">Digital Geographies</h3>
+            <p class="project-authors">Harvard Berkman Klein Center</p>
+            <p class="project-description">Interactive data story which investigates the hidden environmental justice
+                impacts and geographic trends behind Amazon data centers and warehouses using proprietary supply chain and logistics data. </p>
+            <a href="https://ethanmcfarlin.github.io/digitalgeographies.github.io/" target="_blank" class="project-link">
+                <i class="fas fa-link"></i> View Project
+            </a>
+        </div>
+        <div class="glossyContainer grid-item">
+            <div class="image-wrapper">
+                <img src="static/img/project_images/nsaph.jpg" alt="AWS Project Preview" class="preview-image">
+            </div>
+            <div class="project-info">
+                <span class="project-type">Public Health</span>
+                <span class="keywords">
+                    <span class="keyword"><span class="dot" style="background-color: #3A0CA2;"></span>ArcGIS</span>
+                    <span class="keyword"><span class="dot" style="background-color: #4BC8F0;"></span>R</span>
+                    <span class="keyword"><span class="dot" style="background-color: #7209B7;"></span>D3.js</span>
+                </span>
+            </div>
+            <h3 class="project-title">Air Quality Disparities Mapper</h3>
+            <p class="project-authors">Harvard Data Science Initiative</p>
+            <p class="project-description">Comprehensive dashboard which explores the hidden demographic disparities underlying exposure to
+             PM2.5 components, with a corresponding publication in the Journal of Environmental Modeling and Health. </p>
+            <a href="https://disparitiesmapper.github.io/" target="_blank" class="project-link">
+                <i class="fas fa-link"></i> View Project
+            </a>
+        </div>
+        <div class="glossyContainer grid-item">
+            <div class="image-wrapper">
+                <img src="static/img/project_images/startup_summer.jpg" alt="Maslow Project Preview" class="preview-image">
+            </div>
+            <div class="project-info">
+                <span class="project-type">UI/UX Design</span>
+                <span class="keywords">
+                    <span class="keyword"><span class="dot" style="background-color: #9d4edd;"></span>Photoshop</span>
+                    <span class="keyword"><span class="dot" style="background-color: #e0aaff;"></span>After Effects</span>
+                </span>
+            </div>
+            <h3 class="project-title">Startup Summer Pitch</h3>
+            <p class="project-authors">Silicon Flatirons Institute at CU Boulder</p>
+            <p class="project-description">Investor deck presentation for a mobile app aimed at increasing donor-charity engagement by
+               providing charities a platform to communicate with a network of their closest supporters. Tied for first place in the competition.</p>
+            <a href="https://www.youtube.com/watch?v=EkiXjqShb_c" target="_blank" class="project-link">
+                <i class="fas fa-link"></i> View Project
+            </a>
+        </div>
+        <div class="glossyContainer grid-item">
+            <div class="image-wrapper">
+                <img src="static/img/project_images/aws-6.jpg" alt="NSAPH Project Preview" class="preview-image">
+            </div>
+            <div class="project-info">
+                <span class="project-type">Cloud Services</span>
+                <span class="keywords">
+                    <span class="keyword"><span class="dot" style="background-color: #3A0CA2;"></span>AWS</span>
+                    <span class="keyword"><span class="dot" style="background-color: #F72485;"></span>Mapbox</span>
+                </span>
+            </div>
+            <h3 class="project-title">Access & Equity: COVID-19 Mapper</h3>
+            <p class="project-authors">Amazon AWS Data Exchange Hackathon</p>
+            <p class="project-description">Intuitive mapping application which unpacks the socio-economic patterns
+            rooted in the spread of the COVID-19 pandemic, processing over 400,000 lines of data daily. Won "Best Data
+                Visualization" and "Best in Healthcare" among 1,350+ teams.</p>
+            <a href="https://devpost.com/software/covid-19-medical-justice" target="_blank" class="project-link">
+                <i class="fas fa-link"></i> View Project
+            </a>
+        </div>
+        <div class="glossyContainer grid-item">
+            <div class="image-wrapper">
+                <img src="static/img/project_images/maslow.jpg" alt="Startup Summer Project Preview" class="preview-image">
+            </div>
+            <div class="project-info">
+                <span class="project-type">Data Journalism</span>
+                <span class="keywords">
+                    <span class="keyword"><span class="dot" style="background-color: #7209B7;"></span>D3.js</span>
+                    <span class="keyword"><span class="dot" style="background-color: #e500a4;"></span>Tableau</span>
+                </span>
+            </div>
+            <h3 class="project-title">Psychology of American Housing</h3>
+            <p class="project-authors">Harvard COMPSCI 171 'Visualization'</p>
+            <p class="project-description">Comprehensive data story which analyzes a diverse spectrum of datasets about American housing—
+            from the rising popularity of housing TV shows to changing attitudes on the American dream— using Maslow's Psychological Hierarchy of Needs. </p>
+            <a href="https://cs171housing.github.io/" target="_blank" class="project-link">
+                <i class="fas fa-link"></i> View Project
+            </a>
+        </div>
+        <div class="glossyContainer grid-item">
+            <div class="image-wrapper">
+                <img src="static/img/project_images/tumo.png" alt="TUMO Project Preview" class="preview-image">
+            </div>
+            <div class="project-info">
+                <span class="project-type">Education</span>
+                <span class="keywords">
+                    <span class="keyword"><span class="dot" style="background-color: magenta;"></span>Teaching</span>
+                    <span class="keyword"><span class="dot" style="background-color: #4BC8F0;"></span>R</span>
+                </span>
+            </div>
+            <h3 class="project-title">Data Science Course in Armenia</h3>
+            <p class="project-authors">TUMO Center for Creative Technologies</p>
+            <p class="project-description">I taught a 2-week data science and storytelling course in Yerevan, Armenia
+            which provided high-school students (with varying levels of exposure to English) a formative introduction
+                to R, ArcGIS StoryMaps, D3.js, and Adobe XD.</p>
+            <a href="https://tumopersonalgeographies.github.io/" target="_blank" class="project-link">
+                <i class="fas fa-link"></i> View Project
+            </a>
+        </div>
+    </div>
+
+    <div id="placeholderForSketch">
+    </div>
+
     <script>
 
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const actionButton = document.getElementById('actionButton');
             const recentUpdatesHeader = document.getElementById('recentUpdatesHeader');
             const recentUpdates = document.getElementById('recentUpdates');
 
-            actionButton.addEventListener('click', function () {
+            actionButton.addEventListener('click', function() {
                 const headerRect = recentUpdatesHeader.getBoundingClientRect();
                 const updatesRect = recentUpdates.getBoundingClientRect();
-                const offset = (updatesRect.top + headerRect.bottom) / 2;
+                const offset = (updatesRect.top + updatesRect.bottom) / 2;
+
+                window.scrollTo({
+                    top: window.scrollY + offset - (window.innerHeight / 2),
+                    behavior: 'smooth'
+                });
+            });
+
+            // New functionality for navigating to ".projectsGrid"
+            const projectsNavLink = document.getElementById('projectsNavLink');
+            const projectsGrid = document.querySelector('.projectsGrid');
+
+            projectsNavLink.addEventListener('click', function() {
+                const projectsRect = projectsGrid.getBoundingClientRect();
+                const offset = (projectsRect.top + projectsRect.bottom) / 2;
 
                 window.scrollTo({
                     top: window.scrollY + offset - (window.innerHeight / 2),
@@ -181,11 +330,11 @@
         });
 
         const imagePaths = [
-            { path: 'static/img/flowers_wide.jpg', probability: 60 },
+            { path: 'static/img/flowers_wide.jpg', probability: 50 },
             { path: 'static/img/winter.jpg', probability: 15 },
             { path: 'static/img/davis.jpg', probability: 5 },
-            { path: 'static/img/bridge.jpg', probability: 10 },
-            { path: 'static/img/graduation.jpg', probability: 5 },
+            { path: 'static/img/colombia.jpg', probability: 20 },
+            { path: 'static/img/danube.jpg', probability: 5 },
             { path: 'static/img/les_mis.jpg', probability: 5 }
         ];
 
@@ -252,6 +401,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="static/js/sketch.js"></script>
+    <script src="static/js/sketch2.js"></script>
     <script src="static/js/pagination.js"></script>
 
 

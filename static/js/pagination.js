@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const entries = [
-        { date: 'Sep 2024', description: "Continued BKC project as a Research Assistant at the University of Virginia ", label: 'research' },
+        { date: 'Sep 2024', description: "Continued data centers project as a Research Assistant at the University of Virginia ", label: 'research' },
         { date: 'Aug 2024', description: "Returned as a 3x Teaching Assistant for Harvard COMPSCI 171 'Visualization' ", label: 'milestone' },
         { date: 'Aug 2024', description: "Started a new position as Faculty Dean Aide of Leverett House at Harvard", label: 'milestone' },
         { date: 'June 2024', description: 'Taught CSCI P-14115 "Introduction to Data Science" at Harvard Summer School', label: 'milestone' },
