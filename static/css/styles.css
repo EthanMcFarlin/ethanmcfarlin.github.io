@@ -744,7 +744,7 @@ hr {
 }
 
 #portfolioFooter {
-    width: 100%;
+    width: 120%;
     height: 120vw;
     border-radius: 1000px;
     background-color: #141414;
@@ -753,6 +753,7 @@ hr {
     /*left: 50%;*/
     /*transform: translateX(-50%);*/
     /*margin-left: -90%;*/
+    margin-left: -10%;
     display: flex;
     justify-content: center;
     clip: auto;
