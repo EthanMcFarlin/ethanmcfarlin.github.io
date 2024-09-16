@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers the section horizontally */
+    overflow-x: hidden;
 }
 
 /*
@@ -723,9 +724,123 @@ hr {
     margin-right: 5px;
 }
 
+
+/*
+
+   ===================
+   Footer
+   ===================
+
+*/
+
+
+.footer-container {
+    width: 100vw;
+    height: 20vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolioFooter {
+    width: 180vw;
+    height: 180vw;
+    border-radius: 200vw;
+    background-color: #141414;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerContents {
+    width: 60%; /* Further reduced the width to bring the sections even closer */
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    color: white;
+    position: absolute;
+    /*top: 180px; !* Approximately 200 pixels down from the top of the footer *!*/
+    top: 9.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#subtleBorder {
+    position: absolute; /* Makes it position above other elements */
+    top: -22px; /* Aligns at the very top of #footerContents */
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .25) 40%, hsla(0, 0%, 100%, .25) 60%, hsla(0, 0%, 100%, 0)); /* Continues to give border style */
+}
+
+.footer-left,
+.footer-right {
+    position: relative; /* Ensures they remain relative to #footerContents */
+    /* Makes sure they stay below the #subtleBorder */
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left > p {
+    margin-top: 14px;
+}
+
+.footer-logo {
+    width: 25px; /* Same dimensions as #logo1 */
+    height: 25px;
+    background: linear-gradient(45deg, #6a0dad, #9b30ff, #3498db, #1e90ff);
+    border-radius: 50%;
+    margin-right: 20px;
+    /*margin-top: -15px;*/
+}
+
+.footer-right a {
+    margin-left: 8px; /* Further reduced the spacing between links */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-right a:hover {
+    color: #3498db;
+}
+
+.footer-right a i {
+    margin-right: 5px;
+}
+
+.footer-right > a > #mail {
+    padding-right: 7px;
+}
+
+
+/*
+
+   ===================
+   Mobile Resizing
+   ===================
+
+*/
+
+
 @media only screen and (max-width: 1300px) {
     .keywords {
         overflow-wrap: break-word;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #footerContents {
+        top: 10.5vw;
     }
 }
 
@@ -740,6 +855,12 @@ hr {
 
     #actionButton {
         font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #subtleBorder {
+        display: none;
     }
 }
 
@@ -761,6 +882,23 @@ hr {
     }
 }
 
+@media (max-width: 800px) {
+    #footerContents {
+        top: 5vw; /* Further adjusts the top offset for even smaller screens */
+        width: 80%; /* Further reduces the width for even smaller screens */
+        flex-direction: column; /* Stacks items vertically */
+        text-align: center;
+    }
+
+    .footer-right a {
+        margin-left: 10px; /* Adjusts spacing for smaller screens */
+    }
+
+    .footer-left {
+        margin-bottom: 15px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .entries {
         padding: 0 10px;
@@ -769,6 +907,17 @@ hr {
     .date {
         transform: translateX(-15px);
     }
+}
+
+@media (max-width: 650px) {
+    .footer-left {
+        display: none;
+    }
+
+    #footerContents {
+        top: 10vw;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -809,3 +958,4 @@ hr {
         margin-left: 16px;
     }
 }
+
