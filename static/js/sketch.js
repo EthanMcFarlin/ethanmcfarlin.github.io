@@ -7,9 +7,11 @@ const phrases = [
     "teaching", "edtech", "urban planning", "UX design", "web development",
     "human-computer interaction", "science communication", "public policy"
 ];
-let xPos = 0; // Initial x position of the text
-const speed = 1; // Speed at which the text moves to the right
+let xPos = 0;
+const speed = 1;
 let alphaValues = [];
+let totalWidth = 0;
+const spaceBetween = 50;
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -23,63 +25,48 @@ function setup() {
     const canvas = createCanvas(windowWidth, bottomSlice.offsetHeight);
     canvas.parent('bottomCanvasContainer');
     textFont('Inter');
-    textSize(20); // Slightly decreased text size
-    textAlign(LEFT, CENTER); // Align text vertically centered
-    noFill(); // Disable fill initially
+    textSize(20);
+    textAlign(LEFT, CENTER);
+    noFill();
 
-    // Shuffle the phrases at the start
     shuffleArray(phrases);
 
-    // Initialize alpha values for each phrase
     for (let i = 0; i < phrases.length; i++) {
-        alphaValues.push(255); // Fully opaque initially
+        alphaValues.push(255);
     }
+
+    // Compute total width of all texts and spaces once
+    totalWidth = phrases.reduce((acc, phrase) => acc + textWidth(phrase) + spaceBetween, 0);
 }
 
 function draw() {
     background('#131313');
 
-    let totalWidth = 0;
-    const spaceBetween = 50;
-
-    // Calculate the total width of all texts including spaces
-    for (let phrase of phrases) {
-        totalWidth += textWidth(phrase) + spaceBetween;
-    }
-
-    let x = xPos;
+    let currentXPos = xPos;
     const y = height / 2;
 
-    // Ensuring continuous drawing of phrases
-    while (x < width) {
-        for (let i = 0; i < phrases.length; i++) {
-            const phrase = phrases[i];
+    // Draw phrases in a single pass while checking mouse hover
+    for (let i = 0; i < phrases.length; i++) {
+        const phrase = phrases[i];
+        const textW = textWidth(phrase);
 
-            // Calculate text bounding box
-            const textW = textWidth(phrase);
-            const textH = textSize();
-
-            if (mouseX >= x && mouseX <= x + textW && mouseY >= y - textH / 2 && mouseY <= y + textH / 2) {
-                // If mouse is over the text, decrease its alpha to 80% for fade-in effect
-                alphaValues[i] = lerp(alphaValues[i], 255 * 0.8, 0.3); // Target alpha value is 204 (80% of 255)
-            } else {
-                // Otherwise, increase its alpha back to 100% for fade-out effect
-                alphaValues[i] = lerp(alphaValues[i], 255, 0.3); // Fully opaque
-            }
-
-            // Set the fill with the adjusted alpha value
-            fill(255, 255, 255, alphaValues[i]);
-
-            text(phrase, x, y);
-            x += textWidth(phrase) + spaceBetween;
-
-            if (x > width) break;
+        if (mouseX >= currentXPos && mouseX <= currentXPos + textW && mouseY >= y - textSize() / 2 && mouseY <= y + textSize() / 2) {
+            alphaValues[i] = lerp(alphaValues[i], 204, 0.3); // Target alpha value is 204 (80% of 255)
+        } else {
+            alphaValues[i] = lerp(alphaValues[i], 255, 0.3);
         }
+
+        fill(255, 255, 255, alphaValues[i]);
+        text(phrase, currentXPos, y);
+        currentXPos += textW + spaceBetween;
+
+        // Continuously draw phrases to cover the canvas width
+        if (currentXPos > width) break;
     }
 
     xPos -= speed;
 
-    // Reset position if all texts have moved out of the visible canvas area
+    // Reset position if all texts have moved out of the visible area
     if (xPos < -totalWidth) {
         xPos = 0;
     }
