@@ -209,7 +209,7 @@ body {
     transition: transform 0.1s ease, box-shadow 0.3s ease;
     transform-style: preserve-3d;
     box-shadow: 0 0 30px rgba(155, 48, 255, 0.05), 0 0 45px rgba(52, 152, 219, 0.05);
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 #midRight canvas {
