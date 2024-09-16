@@ -1,6 +1,7 @@
 AOS.init({once: true});
 
 document.addEventListener('DOMContentLoaded', function() {
+
     const actionButton = document.getElementById('actionButton');
     const recentUpdatesHeader = document.getElementById('recentUpdatesHeader');
     const recentUpdates = document.getElementById('recentUpdates');
