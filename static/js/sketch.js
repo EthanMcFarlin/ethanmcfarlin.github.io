@@ -42,7 +42,7 @@ function setup() {
 function draw() {
     background('#131313');
 
-    let currentXPos = xPos;
+    let currentXPos = xPos - totalWidth;
     const y = height / 2;
 
     // Draw phrases in a single pass while checking mouse hover
@@ -67,8 +67,8 @@ function draw() {
     xPos -= speed;
 
     // Reset position if all texts have moved out of the visible area
-    if (xPos < -totalWidth) {
-        xPos = 0;
+    if (xPos < 0) {
+        xPos += totalWidth; // Loop back to start
     }
 }
 
