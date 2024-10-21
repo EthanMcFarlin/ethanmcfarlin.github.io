@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const entries = [
-        { date: 'Oct 2024', description: "Teaching Assistant for Harvard COMPSCI 1090a/AC 209 'Intro to Data Science'", label: 'research' },
+        { date: 'Oct 2024', description: "Teaching Assistant for Harvard COMPSCI 1090a/AC 209 'Intro to Data Science'", label: 'milestone' },
         { date: 'Sep 2024', description: "Research Associate at the University of Virginia", label: 'research' },
         { date: 'Aug 2024', description: "Teaching Assistant for Harvard COMPSCI 171 'Visualization' (x3) ", label: 'milestone' },
         { date: 'Aug 2024', description: "Faculty Dean Aide of Leverett House at Harvard", label: 'milestone' },
