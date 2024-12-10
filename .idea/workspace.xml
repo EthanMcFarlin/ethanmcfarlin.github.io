@@ -5,8 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6d27823-38b4-4551-a889-32be745b13c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Old 3/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/browserconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mstile-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/mstile-150x150.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/background-dots.png" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/background-dots.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bridge.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/bridge.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/colombia.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/colombia.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/danube.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/danube.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/davis.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/davis.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/flowers_ewide.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/flowers_ewide.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/flowers_min.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/flowers_min.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/flowers_wide.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/flowers_wide.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/graduation.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/graduation.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/les_mis.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/les_mis.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/project_images/amazon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/project_images/amazon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/project_images/aws-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/project_images/aws-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/project_images/got.png" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/project_images/got.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/project_images/maslow.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/project_images/maslow.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/project_images/nsaph.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/project_images/nsaph.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/project_images/startup_summer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/project_images/startup_summer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/project_images/tumo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/project_images/tumo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/winter.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/img/winter.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/js/pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/js/sketch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/sketch2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Old 3/js/sketch2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +49,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -55,11 +88,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Old 3" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/static/img/project_images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Old 2" />
-      <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -107,7 +140,8 @@
       <workItem from="1728594241608" duration="1851000" />
       <workItem from="1729501535757" duration="1314000" />
       <workItem from="1731615288299" duration="5000" />
-      <workItem from="1733087537559" duration="26000" />
+      <workItem from="1733087537559" duration="137000" />
+      <workItem from="1733873083864" duration="65000" />
     </task>
     <servers />
   </component>
