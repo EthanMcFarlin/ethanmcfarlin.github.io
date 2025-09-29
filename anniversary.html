@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy 2 Year Anniversary Isa</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars */
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        #envelopeCanvas {
+            display: block;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        #letterText {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 2px solid #ccc;
+            padding: 30px;
+            margin: 20px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+            max-width: 600px;
+            text-align: left;
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #333;
+            overflow-y: auto; /* Enable scrolling for long text */
+            max-height: 70vh; /* Limit height to prevent overflow */
+        }
+    </style>
+</head>
+<body>
+<h1>Happy 2 Year Anniversary Isa</h1>
+<div id="envelopeCanvas"></div>
+<div id="letterText">
+    <p>Thank you for being such a wonderful part of my life Isa. It is so surreal looking back on the first time we met in Davis Square. Seeing you through the JP Licks window on that fateful fall day, I could never have imagined the love that would blossom from that moment and irrevocably shape the course of my life. I was instantly struck by your kindness and compassion. 2 years later, I find myself growing closer to you all the time. I admire and adore your curiosity for life and find it to be contagious in all aspects of our relationship. The insights you draw between art, ecology, and music encourage me to cultivate a closer relationship with my surroundings. I always think back to those beautiful summer days biking through Somervile with you. Looking over and watching you smile as you glide through the warm summer air touched my heart in a deep way. Life feels so peaceful and even the small moments are made more beautiful by your side.  You've been such an incredible beacon of support for me throughout this chapter of our lives, and in every way possible, I hope to reciprocate that. I'm really proud of your journey through PhD and scholarship applications and find myself so astonished by how ambitious, driven, and hardworking you are. I know without a shadow of a doubt that you will flourish in this next chapter, and I can't wait to be by your side throughout it. From the scenic banks of the Charles River to the colorful streets of Colombia and everything in between, I'm honored to get to experience life with you. With utmost love, Ethan</p>
+</div>
+
+<script>
+    let envelopeClosed = true;
+    let envelopeColor;
+    let clickSound; // Placeholder for sound
+
+    function setup() {
+        let canvas = createCanvas(300, 200);
+        canvas.parent('envelopeCanvas'); // Attach canvas to the div
+        envelopeColor = color(200, 180, 255); // A nice light purple
+        // You could load a sound here, e.g., clickSound = loadSound('click.mp3');
+    }
+
+    function draw() {
+        background(255); // White background for the canvas
+
+        if (envelopeClosed) {
+            // Draw the main body of the envelope
+            fill(envelopeColor);
+            noStroke();
+            rect(50, 50, 200, 100);
+
+            // Draw the top flap (closed)
+            fill(envelopeColor.levels[0] - 20, envelopeColor.levels[1] - 20, envelopeColor.levels[2] - 20); // Slightly darker
+            triangle(50, 50, 250, 50, 150, 100);
+
+            // Draw the triangular bottom flap
+            fill(envelopeColor);
+            triangle(50, 150, 250, 150, 150, 175); // Pointy bottom
+
+            // Draw side flaps
+            fill(envelopeColor);
+            quad(50, 50, 50, 150, 75, 125, 75, 75);
+            quad(250, 50, 250, 150, 225, 125, 225, 75);
+
+            // Add a subtle heart or seal
+            fill(255, 100, 100); // Red heart
+            noStroke();
+            beginShape();
+            vertex(150, 65);
+            bezierVertex(150 + 10, 65 - 15, 150 + 25, 65 - 5, 150, 65 + 10);
+            bezierVertex(150 - 25, 65 - 5, 150 - 10, 65 - 15, 150, 65);
+            endShape(CLOSE);
+
+        } else {
+            // Envelope is open, draw the opened letter and the envelope flaps
+            // Main envelope body
+            fill(envelopeColor);
+            noStroke();
+            rect(50, 50, 200, 100);
+
+            // Side flaps open
+            fill(envelopeColor);
+            quad(50, 50, 50, 150, 25, 100, 25, 50); // Left flap
+            quad(250, 50, 250, 150, 275, 100, 275, 50); // Right flap
+
+            // Bottom flap open
+            fill(envelopeColor);
+            triangle(50, 150, 250, 150, 150, 190); // Flatter bottom flap
+
+            // Top flap open (flipped up)
+            fill(envelopeColor.levels[0] - 20, envelopeColor.levels[1] - 20, envelopeColor.levels[2] - 20);
+            triangle(50, 50, 250, 50, 150, 20); // Flipped up
+
+            // Draw the letter paper peeking out
+            fill(255); // White paper
+            rect(60, 60, 180, 80); // Letter inside
+        }
+    }
+
+    function mousePressed() {
+        // Check if mouse is within envelope bounds
+        if (mouseX > 50 && mouseX < 250 && mouseY > 50 && mouseY < 150 && envelopeClosed) {
+            envelopeClosed = false;
+            document.getElementById('letterText').style.display = 'block';
+            // if (clickSound) clickSound.play(); // Play sound if loaded
+        } else if (!envelopeClosed) {
+            // If clicked again while open, close it and hide text
+            envelopeClosed = true;
+            document.getElementById('letterText').style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
+
